@@ -1,0 +1,48 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #e3350d; /* Pokémon Red */
+  margin-bottom: 10px;
+}
+
+/* Grid for the maps and charts */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.map-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-context {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  line-height: 1.6;
+}
