@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon TCG: Cultural Economy</title>
+  
+  <!-- Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="page-container">
+    <header>
+      <h1>From Niche Hobby to Global Phenomenon</h1>
+      <p>How the Pokémon TCG Cultivated a Competitive Cultural Economy</p>
+    </header>
+
+    <div class="dashboard-grid">
+      <!-- Proportional Symbol Map Section -->
+      <div class="map-container">
+        <div class="text-context">
+          <h2>The Global Tournament Footprint</h2>
+          <p>Since its inception, competitive Pokémon has expanded far beyond its Tokyo roots. Today, mega-hubs across Australia and Malaysia host thousands of players, driving local tourism and cultural exchange.</p>
+        </div>
+        <div id="proportional_map"></div>
+      </div>
+      
+      <!-- Future charts will go here -->
+    </div>
+  </div>
+
+  <script>
+    // Embed the Proportional Symbol Map
+    vegaEmbed('#proportional_map', 'js/proportional_map.vg.json').catch(console.error);
+  </script>
+
+</body>
+</html>
