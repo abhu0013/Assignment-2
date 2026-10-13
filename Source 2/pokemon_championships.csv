@@ -1,226 +1,226 @@
-Date,Tournament Name,Tier,City,Country,Attendance,Latitude,Longitude
-10-Jun-26,"NAIC 2026, New Orleans",International,New Orleans,United States,3752,29.9574657,-90.0629493
+year,tournament_name,tier,city,country,attendance,latitude,longitude
+10-Jun-26,"NAIC 2026, New Orleans",International,New Orleans,United States of America,3752,29.9574657,-90.0629493
 13-Feb-26,"EUIC 2026, London",International,London,Great Britain,4010,51.5237826,-0.139949
-21-Nov-25,"LAIC 2025–26, São Paulo",International,São Paulo,Brazil,2117,-23.5506507,-46.6333824
-13-Jun-25,"NAIC 2025, New Orleans",International,New Orleans,United States,3812,29.9574657,-90.0629493
+21-Nov-25,"LAIC 2025-26, Sao Paulo",International,Sao Paulo,Brazil,2117,-23.5506507,-46.6333824
+13-Jun-25,"NAIC 2025, New Orleans",International,New Orleans,United States of America,3812,29.9574657,-90.0629493
 21-Feb-25,"EUIC 2025, London",International,London,Great Britain,3361,51.5237826,-0.139949
-15-Nov-24,"LAIC 2024–25, São Paulo",International,São Paulo,Brazil,1810,-23.5506507,-46.6333824
-7-Jun-24,"NAIC 2024, New Orleans",International,New Orleans,United States,2692,29.9574657,-90.0629493
+15-Nov-24,"LAIC 2024-25, Sao Paulo",International,Sao Paulo,Brazil,1810,-23.5506507,-46.6333824
+7-Jun-24,"NAIC 2024, New Orleans",International,New Orleans,United States of America,2692,29.9574657,-90.0629493
 5-Apr-24,"EUIC 2024, London",International,London,Great Britain,2605,51.5237826,-0.139949
-17-Nov-23,"LAIC 2023–24, São Paulo",International,São Paulo,Brazil,1263,-23.5506507,-46.6333824
-29-Jun-23,"NAIC 2023, Columbus",International,Columbus,United States,1897,39.9622601,-83.0007065
+17-Nov-23,"LAIC 2023-24, Sao Paulo",International,Sao Paulo,Brazil,1263,-23.5506507,-46.6333824
+29-Jun-23,"NAIC 2023, Columbus",International,Columbus,United States of America,1897,39.9622601,-83.0007065
 14-Apr-23,"EUIC 2023, London",International,London,Great Britain,1525,51.5237826,-0.139949
 17-Feb-23,"OCIC 2023, Melbourne",International,Melbourne,Australia,528,-37.8142454,144.9631732
-25-Nov-22,"LAIC 2022–23, São Paulo",International,São Paulo,Brazil,976,-23.5506507,-46.6333824
-24-Jun-22,"NAIC 2022, Columbus",International,Columbus,United States,1155,39.9622601,-83.0007065
+25-Nov-22,"LAIC 2022-23, Sao Paulo",International,Sao Paulo,Brazil,976,-23.5506507,-46.6333824
+24-Jun-22,"NAIC 2022, Columbus",International,Columbus,United States of America,1155,39.9622601,-83.0007065
 22-Apr-22,"EUIC 2022, Frankfurt",International,Frankfurt,Germany,618,50.1106444,8.6820917
 21-Feb-20,"OCIC 2020, Melbourne",International,Melbourne,Australia,407,-37.8142454,144.9631732
-15-Nov-19,"LAIC 2019–20, São Paulo",International,São Paulo,Brazil,756,-23.5506507,-46.6333824
-21-Jun-19,"NAIC 2019, Columbus",International,Columbus,United States,1121,39.9622601,-83.0007065
+15-Nov-19,"LAIC 2019-20, Sao Paulo",International,Sao Paulo,Brazil,756,-23.5506507,-46.6333824
+21-Jun-19,"NAIC 2019, Columbus",International,Columbus,United States of America,1121,39.9622601,-83.0007065
 26-Apr-19,"EUIC 2019, Berlin",International,Berlin,Germany,831,52.5173885,13.3951309
 15-Feb-19,"OCIC 2019, Melbourne",International,Melbourne,Australia,338,-37.8142454,144.9631732
-16-Nov-18,"LAIC 2018–19, São Paulo",International,São Paulo,Brazil,630,-23.5506507,-46.6333824
-6-Jul-18,"NAIC 2018, Columbus",International,Columbus,United States,1445,39.9622601,-83.0007065
-27-Apr-18,"LAIC 2018, São Paulo",International,São Paulo,Brazil,596,-23.5506507,-46.6333824
+16-Nov-18,"LAIC 2018-19, Sao Paulo",International,Sao Paulo,Brazil,630,-23.5506507,-46.6333824
+6-Jul-18,"NAIC 2018, Columbus",International,Columbus,United States of America,1445,39.9622601,-83.0007065
+27-Apr-18,"LAIC 2018, Sao Paulo",International,Sao Paulo,Brazil,596,-23.5506507,-46.6333824
 9-Feb-18,"OCIC 2018, Sydney",International,Sydney,Australia,335,-33.8698439,151.2082848
-17-Nov-17,"EUIC 2017–18, London",International,London,Great Britain,784,51.5237826,-0.139949
-30-Jun-17,"NAIC 2017, Indianapolis",International,Indianapolis,United States,1356,39.7683331,-86.1583502
-21-Apr-17,"LAIC 2017, São Paulo",International,São Paulo,Brazil,626,-23.5506507,-46.6333824
+17-Nov-17,"EUIC 2017-18, London",International,London,Great Britain,784,51.5237826,-0.139949
+30-Jun-17,"NAIC 2017, Indianapolis",International,"Indianapolis, IN",United States of America,1356,39.7683331,-86.1583502
+21-Apr-17,"LAIC 2017, Sao Paulo",International,Sao Paulo,Brazil,626,-23.5506507,-46.6333824
 10-Mar-17,"OCIC 2017, Melbourne",International,Melbourne,Australia,274,-37.8142454,144.9631732
 9-Dec-16,"EUIC 2016-17, London",International,London,Great Britain,499,51.5237826,-0.139949
 3-Oct-26,Regional Recife,Regional,Recife,Brazil,1074,-8.0584933,-34.8848193
 26-Sep-26,Regional Frankfurt,Regional,Frankfurt,Germany,2793,50.1106444,8.6820917
 26-Sep-26,Regional Brisbane,Regional,Brisbane,Australia,817,-27.4689623,153.0235009
-19-Sep-26,"Regional Baltimore, MD",Regional,Baltimore,United States,3122,39.2908816,-76.610759
-30-May-26,"Regional Indianapolis, IN",Regional,Indianapolis,United States,1974,39.7683331,-86.1583502
+19-Sep-26,"Regional Baltimore, MD",Regional,Baltimore,United States of America,3122,39.2908816,-76.610759
+30-May-26,"Regional Indianapolis, IN",Regional,"Indianapolis, IN",United States of America,1974,39.7683331,-86.1583502
 23-May-26,Regional Melbourne,Regional,Melbourne,Australia,959,-37.8142454,144.9631732
 16-May-26,Regional Utrecht,Regional,Utrecht,Netherlands,2150,52.0907006,5.1215634
 16-May-26,Regional Campinas,Regional,Campinas,Brazil,1725,-22.9056391,-47.059564
-9-May-26,"Regional Los Angeles, CA",Regional,Los Angeles,United States,1849,34.0536923,-118.2427676
+9-May-26,"Regional Los Angeles, CA",Regional,Los Angeles,United States of America,1849,34.0536923,-118.2427676
 25-Apr-26,Regional Prague,Regional,Prague,Czech Republic,1370,50.0874654,14.4212535
-4-Apr-26,"Regional Orlando, FL",Regional,Orlando,United States,2745,28.5421218,-81.379045
-4-Apr-26,Regional Querétaro,Regional,Querétaro,Mexico,1446,20.8052225,-99.8837376
-21-Mar-26,"Regional Houston, TX",Regional,Houston,United States,2635,29.7589382,-95.3676974
+4-Apr-26,"Regional Orlando, FL",Regional,"Orlando, FL",United States of America,2745,28.5421218,-81.379045
+4-Apr-26,Regional Queretaro,Regional,Queretaro,Mexico,1446,20.8052225,-99.8837376
+21-Mar-26,"Regional Houston, TX",Regional,Houston,United States of America,2635,29.7589382,-95.3676974
 14-Mar-26,Regional Curitiba,Regional,Curitiba,Brazil,1449,-25.4295963,-49.2712724
-28-Feb-26,"Regional Seattle, WA",Regional,Seattle,United States,2231,47.6038321,-122.330062
+28-Feb-26,"Regional Seattle, WA",Regional,"Seattle, WA",United States of America,2231,47.6038321,-122.330062
 7-Feb-26,Regional Sydney,Regional,Sydney,Australia,699,-33.8698439,151.2082848
 7-Feb-26,Regional Santiago,Regional,Santiago,Chile,1670,-33.4376995,-70.6510671
 24-Jan-26,Regional Birmingham,Regional,Birmingham,Great Britain,2344,52.4814,-1.8998
-24-Jan-26,Regional Mérida,Regional,Mérida,Mexico,1690,20.9670759,-89.6237402
+24-Jan-26,Regional Merida,Regional,Mérida,Mexico,1690,20.9670759,-89.6237402
 17-Jan-26,Regional Toronto,Regional,Toronto,Canada,2270,43.6534817,-79.3839347
 29-Nov-25,Regional Stuttgart,Regional,Stuttgart,Germany,2200,48.7784485,9.1800132
-15-Nov-25,"Regional Las Vegas, NV",Regional,Las Vegas,United States,2919,36.1674263,-115.1484131
+15-Nov-25,"Regional Las Vegas, NV",Regional,Las Vegas,United States of America,2919,36.1674263,-115.1484131
 1-Nov-25,Regional Brisbane,Regional,Brisbane,Australia,617,-27.4689623,153.0235009
-1-Nov-25,Regional Gda?sk,Regional,Gda?sk,Poland,1675,54.4288032,18.798327
+1-Nov-25,Regional Gdansk,Regional,Gdansk,Poland,1675,54.4288032,18.798327
 25-Oct-25,Regional Lille,Regional,Lille,France,2028,50.6365654,3.0635282
 11-Oct-25,Regional Belo Horizonte,Regional,Belo Horizonte,Brazil,1117,-19.9227318,-43.9450948
-11-Oct-25,"Regional Milwaukee, WI",Regional,Milwaukee,United States,2305,43.0386475,-87.9090751
-20-Sep-25,"Regional Pittsburgh, PA",Regional,Pittsburgh,United States,2691,40.4406968,-80.0025666
+11-Oct-25,"Regional Milwaukee, WI",Regional,"Milwaukee, WI",United States of America,2305,43.0386475,-87.9090751
+20-Sep-25,"Regional Pittsburgh, PA",Regional,Pittsburgh,United States of America,2691,40.4406968,-80.0025666
 13-Sep-25,Regional Monterrey,Regional,Monterrey,Mexico,1620,25.6802019,-100.315258
 13-Sep-25,Regional Frankfurt,Regional,Frankfurt,Germany,2433,50.1106444,8.6820917
-24-May-25,"Regional Portland, OR",Regional,Portland,United States,1688,45.5202471,-122.674194
+24-May-25,"Regional Portland, OR",Regional,"Portland, OR",United States of America,1688,45.5202471,-122.674194
 17-May-25,Regional Melbourne,Regional,Melbourne,Australia,563,-37.8142454,144.9631732
 17-May-25,Regional Santiago,Regional,Santiago,Chile,1249,-33.4376995,-70.6510671
-3-May-25,"Regional Milwaukee, WI",Regional,Milwaukee,United States,1657,43.0386475,-87.9090751
+3-May-25,"Regional Milwaukee, WI",Regional,"Milwaukee, WI",United States of America,1657,43.0386475,-87.9090751
 19-Apr-25,Regional Monterrey,Regional,Monterrey,Mexico,1327,25.6802019,-100.315258
-12-Apr-25,"Regional Atlanta, GA",Regional,Atlanta,United States,2684,33.7544657,-84.3898151
+12-Apr-25,"Regional Atlanta, GA",Regional,Atlanta,United States of America,2684,33.7544657,-84.3898151
 29-Mar-25,Regional Brisbane,Regional,Brisbane,Australia,470,-27.4689623,153.0235009
 22-Mar-25,Regional Stockholm,Regional,Stockholm,Sweden,815,59.3251172,18.0710935
-8-Mar-25,Regional Vancouver,Regional,Vancouver,Canada,1314,49.2608724,-123.113952
+8-Mar-25,Regional Vancouver,Regional,"Vancouver, BC",Canada,1314,49.2608724,-123.113952
 8-Mar-25,Regional Fortaleza,Regional,Fortaleza,Brazil,715,-3.7932167,-38.5280359
-8-Feb-25,Regional Mérida,Regional,Mérida,Mexico,1151,20.9670759,-89.6237402
-25-Jan-25,"Regional San Antonio, TX",Regional,San Antonio,United States,2400,29.4246002,-98.4951405
+8-Feb-25,Regional Merida,Regional,Mérida,Mexico,1151,20.9670759,-89.6237402
+25-Jan-25,"Regional San Antonio, TX",Regional,San Antonio,United States of America,2400,29.4246002,-98.4951405
 18-Jan-25,Regional Rio de Janeiro,Regional,Rio de Janeiro,Brazil,1139,-22.9110137,-43.2093727
 18-Jan-25,Regional Birmingham,Regional,Birmingham,Great Britain,2018,52.4814,-1.8998
 12-Dec-24,Regional Toronto,Regional,Toronto,Canada,2137,43.6534817,-79.3839347
 7-Dec-24,Regional Perth,Regional,Perth,Australia,318,-31.9558967,115.8605784
 30-Nov-24,Regional Stuttgart,Regional,Stuttgart,Germany,1702,48.7784485,9.1800132
-23-Nov-24,"Regional Sacramento, CA",Regional,Sacramento,United States,1705,38.5810606,-121.493895
-2-Nov-24,Regional Gda?sk,Regional,Gda?sk,Poland,1372,54.4288032,18.798327
+23-Nov-24,"Regional Sacramento, CA",Regional,Sacramento,United States of America,1705,38.5810606,-121.493895
+2-Nov-24,Regional Gdansk,Regional,Gdansk,Poland,1372,54.4288032,18.798327
 19-Oct-24,Regional Lille,Regional,Lille,France,1311,50.6365654,3.0635282
-12-Oct-24,"Regional Louisville, KY",Regional,Louisville,United States,1938,38.2542376,-85.759407
+12-Oct-24,"Regional Louisville, KY",Regional,Louisville,United States of America,1938,38.2542376,-85.759407
 28-Sep-24,Regional Joinville,Regional,Joinville,Brazil,578,-26.3044898,-48.8486726
 28-Sep-24,Regional Dortmund,Regional,Dortmund,Germany,1815,51.5142273,7.4652789
-14-Sep-24,"Regional Baltimore, MD",Regional,Baltimore,United States,2307,39.2908816,-76.610759
-25-May-24,"Regional Los Angeles, CA",Regional,Los Angeles,United States,2073,34.0536923,-118.2427676
+14-Sep-24,"Regional Baltimore, MD",Regional,Baltimore,United States of America,2307,39.2908816,-76.610759
+25-May-24,"Regional Los Angeles, CA",Regional,Los Angeles,United States of America,2073,34.0536923,-118.2427676
 18-May-24,Regional Santiago,Regional,Santiago,Chile,892,-33.4376995,-70.6510671
 11-May-24,Regional Stockholm,Regional,Stockholm,Sweden,675,59.3251172,18.0710935
-4-May-24,"Regional Indianapolis, IN",Regional,Indianapolis,United States,2342,39.7683331,-86.1583502
-20-Apr-24,Regional São Paulo,Regional,São Paulo,Brazil,1142,-23.5506507,-46.6333824
+4-May-24,"Regional Indianapolis, IN",Regional,"Indianapolis, IN",United States of America,2342,39.7683331,-86.1583502
+20-Apr-24,Regional Sao Paulo,Regional,Sao Paulo,Brazil,1142,-23.5506507,-46.6333824
 13-Apr-24,Regional Perth,Regional,Perth,Australia,257,-31.9558967,115.8605784
-13-Apr-24,"Regional Orlando, FL",Regional,Orlando,United States,2369,28.5421218,-81.379045
-23-Mar-24,Regional Vancouver,Regional,Vancouver,Canada,985,49.2608724,-123.113952
-9-Mar-24,Regional Goiânia,Regional,Goiânia,Brazil,536,-16.680882,-49.2532691
+13-Apr-24,"Regional Orlando, FL",Regional,"Orlando, FL",United States of America,2369,28.5421218,-81.379045
+23-Mar-24,Regional Vancouver,Regional,"Vancouver, BC",Canada,985,49.2608724,-123.113952
+9-Mar-24,Regional Goiania,Regional,Goiania,Brazil,536,-16.680882,-49.2532691
 10-Feb-24,Regional Dortmund,Regional,Dortmund,Germany,1348,51.5142273,7.4652789
 3-Feb-24,Regional Melbourne,Regional,Melbourne,Australia,531,-37.8142454,144.9631732
-3-Feb-24,"Regional Knoxville, TN",Regional,Knoxville,United States,1367,35.9603948,-83.9210261
+3-Feb-24,"Regional Knoxville, TN",Regional,"Knoxville, TN",United States of America,1367,35.9603948,-83.9210261
 27-Jan-24,Regional Liverpool,Regional,Liverpool,Great Britain,1518,53.4106,-2.9779
-20-Jan-24,"Regional Charlotte, NC",Regional,Charlotte,United States,2133,35.2272086,-80.8430827
-6-Jan-24,"Regional Portland, OR",Regional,Portland,United States,1498,45.5202471,-122.674194
-16-Dec-23,"Regional San Antonio, TX",Regional,San Antonio,United States,1985,29.4246002,-98.4951405
+20-Jan-24,"Regional Charlotte, NC",Regional,Charlotte,United States of America,2133,35.2272086,-80.8430827
+6-Jan-24,"Regional Portland, OR",Regional,"Portland, OR",United States of America,1498,45.5202471,-122.674194
+16-Dec-23,"Regional San Antonio, TX",Regional,San Antonio,United States of America,1985,29.4246002,-98.4951405
 9-Dec-23,Regional Stuttgart,Regional,Stuttgart,Germany,982,48.7784485,9.1800132
 25-Nov-23,Regional Brisbane,Regional,Brisbane,Australia,388,-27.4689623,153.0235009
-25-Nov-23,Regional Gda?sk,Regional,Gda?sk,Poland,997,54.4288032,18.798327
+25-Nov-23,Regional Gdansk,Regional,Gdansk,Poland,997,54.4288032,18.798327
 28-Oct-23,Regional Toronto,Regional,Toronto,Canada,1543,43.6534817,-79.3839347
 21-Oct-23,Regional Lille,Regional,Lille,France,855,50.6365654,3.0635282
-14-Oct-23,"Regional Sacramento, CA",Regional,Sacramento,United States,1427,38.5810606,-121.493895
-7-Oct-23,"Regional Peoria, IL",Regional,Peoria,United States,1703,40.6938609,-89.5891008
+14-Oct-23,"Regional Sacramento, CA",Regional,Sacramento,United States of America,1427,38.5810606,-121.493895
+7-Oct-23,"Regional Peoria, IL",Regional,"Peoria, IL",United States of America,1703,40.6938609,-89.5891008
 23-Sep-23,Regional Curitiba,Regional,Curitiba,Brazil,379,-25.4295963,-49.2712724
-9-Sep-23,"Regional Pittsburgh, PA",Regional,Pittsburgh,United States,1778,40.4406968,-80.0025666
-10-Jun-23,"Regional Fresno, CA",Regional,Fresno,United States,903,36.7394421,-119.78483
+9-Sep-23,"Regional Pittsburgh, PA",Regional,Pittsburgh,United States of America,1778,40.4406968,-80.0025666
+10-Jun-23,"Regional Fresno, CA",Regional,Fresno,United States of America,903,36.7394421,-119.78483
 3-Jun-23,Regional Santiago,Regional,Santiago,Chile,729,-33.4376995,-70.6510671
-3-Jun-23,"Regional Milwaukee, WI",Regional,Milwaukee,United States,1112,43.0386475,-87.9090751
-20-May-23,Regional Malmö,Regional,Malmö,Sweden,473,55.6052931,13.0001566
-20-May-23,"Regional Hartford, CT",Regional,Hartford,United States,1059,41.7661621,-72.6732726
-6-May-23,Regional São Paulo,Regional,São Paulo,Brazil,765,-23.5506507,-46.6333824
-6-May-23,"Regional Portland, OR",Regional,Portland,United States,1088,45.5202471,-122.674194
-1-Apr-23,"Regional Fort Wayne, IN",Regional,Fort Wayne,United States,1154,41.0799898,-85.1386015
+3-Jun-23,"Regional Milwaukee, WI",Regional,"Milwaukee, WI",United States of America,1112,43.0386475,-87.9090751
+20-May-23,Regional Malmo,Regional,Malmo,Sweden,473,55.6052931,13.0001566
+20-May-23,"Regional Hartford, CT",Regional,"Hartford, CT",United States of America,1059,41.7661621,-72.6732726
+6-May-23,Regional Sao Paulo,Regional,Sao Paulo,Brazil,765,-23.5506507,-46.6333824
+6-May-23,"Regional Portland, OR",Regional,"Portland, OR",United States of America,1088,45.5202471,-122.674194
+1-Apr-23,"Regional Fort Wayne, IN",Regional,"Fort Wayne, IN",United States of America,1154,41.0799898,-85.1386015
 1-Apr-23,Regional Sydney,Regional,Sydney,Australia,242,-33.8698439,151.2082848
-25-Mar-23,"Regional Charlotte, NC",Regional,Charlotte,United States,1170,35.2272086,-80.8430827
-11-Mar-23,"Regional Vancouver, BC",Regional,Vancouver,Canada,526,49.2608724,-123.113952
+25-Mar-23,"Regional Charlotte, NC",Regional,Charlotte,United States of America,1170,35.2272086,-80.8430827
+11-Mar-23,Regional Vancouver,Regional,"Vancouver, BC",Canada,526,49.2608724,-123.113952
 11-Mar-23,Regional Natal,Regional,Natal,Brazil,263,-5.805398,-35.2080905
 4-Mar-23,Regional Perth,Regional,Perth,Australia,96,-31.9558967,115.8605784
-25-Feb-23,"Regional Knoxville, TN",Regional,Knoxville,United States,1139,35.9603948,-83.9210261
+25-Feb-23,"Regional Knoxville, TN",Regional,"Knoxville, TN",United States of America,1139,35.9603948,-83.9210261
 25-Feb-23,Regional Bochum,Regional,Bochum,Germany,767,51.4818111,7.2196635
-4-Feb-23,"Regional Orlando, FL",Regional,Orlando,United States,1485,28.5421218,-81.379045
+4-Feb-23,"Regional Orlando, FL",Regional,"Orlando, FL",United States of America,1485,28.5421218,-81.379045
 21-Jan-23,Regional Liverpool,Regional,Liverpool,Great Britain,761,53.4106,-2.9779
-7-Jan-23,"Regional San Diego, CA",Regional,San Diego,United States,846,32.7157062,-117.1638284
-17-Dec-22,"Regional Arlington, TX",Regional,Arlington,United States,1224,32.7355816,-97.1071186
+7-Jan-23,"Regional San Diego, CA",Regional,"San Diego, CA",United States of America,846,32.7157062,-117.1638284
+17-Dec-22,"Regional Arlington, TX",Regional,Arlington,United States of America,1224,32.7355816,-97.1071186
 3-Dec-22,Regional Stuttgart,Regional,Stuttgart,Germany,745,48.7784485,9.1800132
-3-Dec-22,"Regional Toronto, ON",Regional,Toronto,Canada,1061,43.6534817,-79.3839347
+3-Dec-22,Regional Toronto,Regional,Toronto,Canada,1061,43.6534817,-79.3839347
 3-Dec-22,Regional Brisbane,Regional,Brisbane,Australia,182,-27.4689623,153.0235009
 12-Nov-22,Regional Warsaw,Regional,Warsaw,Poland,722,52.2333742,21.0711489
 22-Oct-22,Regional Lille,Regional,Lille,France,573,50.6365654,3.0635282
-15-Oct-22,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States,837,40.7596198,-111.886797
-1-Oct-22,"Regional Peoria, IL",Regional,"Peoria, IL",United States,1084,40.6938609,-89.5891008
+15-Oct-22,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States of America,837,40.7596198,-111.886797
+1-Oct-22,"Regional Peoria, IL",Regional,"Peoria, IL",United States of America,1084,40.6938609,-89.5891008
 17-Sep-22,Regional Porto Alegre,Regional,Porto Alegre,Brazil,253,-30.0324999,-51.2303767
-17-Sep-22,"Regional Baltimore, MD",Regional,"Baltimore, MD",United States,1088,39.2908816,-76.610759
-18-Jun-22,"Regional Milwaukee, WI",Regional,"Milwaukee, WI",United States,685,43.0386475,-87.9090751
+17-Sep-22,"Regional Baltimore, MD",Regional,Baltimore,United States of America,1088,39.2908816,-76.610759
+18-Jun-22,"Regional Milwaukee, WI",Regional,"Milwaukee, WI",United States of America,685,43.0386475,-87.9090751
 11-Jun-22,Regional Melbourne,Regional,Melbourne,Australia,195,-37.8142454,144.9631732
 4-Jun-22,Regional Santiago,Regional,Santiago,Chile,382,-33.4376995,-70.6510671
 28-May-22,Regional Bremen,Regional,Bremen,Germany,483,53.0758196,8.8071646
-28-May-22,"Regional Vancouver, BC",Regional,"Vancouver, BC",Canada,348,49.2608724,-123.113952
-21-May-22,"Regional Secaucus, NJ",Regional,"Secaucus, NJ",United States,497,40.7899291,-74.0566735
+28-May-22,Regional Vancouver,Regional,"Vancouver, BC",Canada,348,49.2608724,-123.113952
+21-May-22,"Regional Secaucus, NJ",Regional,"Secaucus, NJ",United States of America,497,40.7899291,-74.0566735
 21-May-22,Regional Lille,Regional,Lille,France,368,50.6365654,3.0635282
 21-May-22,Regional Perth,Regional,Perth,Australia,85,-31.9558967,115.8605784
-7-May-22,"Regional Indianapolis, IN",Regional,"Indianapolis, IN",United States,1017,39.7683331,-86.1583502
+7-May-22,"Regional Indianapolis, IN",Regional,"Indianapolis, IN",United States of America,1017,39.7683331,-86.1583502
 7-May-22,Regional Joinville,Regional,Joinville,Brazil,222,-26.3044898,-48.8486726
-2-Apr-22,Regional São Paulo,Regional,São Paulo,Brazil,301,-23.5506507,-46.6333824
+2-Apr-22,Regional Sao Paulo,Regional,Sao Paulo,Brazil,301,-23.5506507,-46.6333824
 26-Mar-22,Regional Liverpool,Regional,Liverpool,Great Britain,373,53.4106,-2.9779
-19-Mar-22,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States,627,40.7596198,-111.886797
+19-Mar-22,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States of America,627,40.7596198,-111.886797
 12-Mar-22,Regional Brisbane,Regional,Brisbane,Australia,150,-27.4689623,153.0235009
 14-Mar-20,Regional Perth,Regional,Perth,Australia,59,-31.9558967,115.8605784
-7-Mar-20,Regional Malmö,Regional,Malmö,Sweden,298,55.6052931,13.0001566
-29-Feb-20,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States,640,38.6703267,-89.9845476
+7-Mar-20,Regional Malmo,Regional,Malmo,Sweden,298,55.6052931,13.0001566
+29-Feb-20,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States of America,640,38.6703267,-89.9845476
 25-Jan-20,Regional Sao Paulo,Regional,Sao Paulo,Brazil,450,-23.5506507,-46.6333824
-18-Jan-20,"Regional Dallas, TX",Regional,"Dallas, TX",United States,756,32.7762719,-96.7968559
+18-Jan-20,"Regional Dallas, TX",Regional,"Dallas, TX",United States of America,756,32.7762719,-96.7968559
 11-Jan-20,Regional Bochum,Regional,Bochum,Germany,659,51.4818111,7.2196635
 21-Dec-19,Regional Kuala Lumpur,Regional,Kuala Lumpur,Malaysia,282,3.1516964,101.6942371
 7-Dec-19,Regional Brisbane,Regional,Brisbane,Australia,152,-27.4689623,153.0235009
-7-Dec-19,"Regional San Diego, CA",Regional,"San Diego, CA",United States,580,32.7157062,-117.1638284
-30-Nov-19,"Regional Daytona Beach, FL",Regional,"Daytona Beach, FL",United States,464,29.2108147,-81.0228331
-9-Nov-19,"Regional Portland, OR",Regional,"Portland, OR",United States,458,45.5202471,-122.674194
-2-Nov-19,"Regional Richmond, VA",Regional,"Richmond, VA",United States,405,37.5385087,-77.43428
-12-Oct-19,"Regional Knoxville, TN",Regional,"Knoxville, TN",United States,778,35.9603948,-83.9210261
+7-Dec-19,"Regional San Diego, CA",Regional,"San Diego, CA",United States of America,580,32.7157062,-117.1638284
+30-Nov-19,"Regional Daytona Beach, FL",Regional,"Daytona Beach, FL",United States of America,464,29.2108147,-81.0228331
+9-Nov-19,"Regional Portland, OR",Regional,"Portland, OR",United States of America,458,45.5202471,-122.674194
+2-Nov-19,"Regional Richmond, VA",Regional,"Richmond, VA",United States of America,405,37.5385087,-77.43428
+12-Oct-19,"Regional Knoxville, TN",Regional,"Knoxville, TN",United States of America,778,35.9603948,-83.9210261
 28-Sep-19,Regional Cologne,Regional,Cologne,Germany,726,50.938361,6.959974
-28-Sep-19,"Regional Atlantic City, NJ",Regional,"Atlantic City, NJ",United States,762,39.3642852,-74.4229351
+28-Sep-19,"Regional Atlantic City, NJ",Regional,"Atlantic City, NJ",United States of America,762,39.3642852,-74.4229351
 7-Sep-19,Regional Sheffield,Regional,Sheffield,Great Britain,572,53.383331,-1.466667
 15-Jun-19,Regional Jonkoping,Regional,Jonkoping,Sweden,108,57.7825634,14.165719
 8-Jun-19,Regional Santiago,Regional,Santiago,Chile,333,-33.4376995,-70.6510671
-1-Jun-19,"Regional Madison, WI",Regional,"Madison, WI",United States,585,43.07469,-89.3841663
-18-May-19,"Regional Santa Clara, CA",Regional,"Santa Clara, CA",United States,470,37.2333253,-121.6846349
+1-Jun-19,"Regional Madison, WI",Regional,"Madison, WI",United States of America,585,43.07469,-89.3841663
+18-May-19,"Regional Santa Clara, CA",Regional,"Santa Clara, CA",United States of America,470,37.2333253,-121.6846349
 18-May-19,Regional Sydney,Regional,Sydney,Australia,148,-33.8698439,151.2082848
 18-May-19,Regional Sao Paulo,Regional,Sao Paulo,Brazil,501,-23.5506507,-46.6333824
-11-May-19,Malaysia Regionals,Regional,Malaysia s,Malaysia,316,5.2265873,100.4504672
+11-May-19,Malaysia Regionals,Regional,Malaysia,Malaysia,316,5.2265873,100.4504672
 11-May-19,Regional Bristol,Regional,Bristol,Great Britain,381,51.4491391,-2.608328
-4-May-19,"Regional Hartford, CT",Regional,"Hartford, CT",United States,362,41.7661621,-72.6732726
-20-Apr-19,"Regional Daytona Beach, FL",Regional,"Daytona Beach, FL",United States,367,29.2108147,-81.0228331
-6-Apr-19,"Regional Denver, CO",Regional,"Denver, CO",United States,640,39.7392364,-104.984862
+4-May-19,"Regional Hartford, CT",Regional,"Hartford, CT",United States of America,362,41.7661621,-72.6732726
+20-Apr-19,"Regional Daytona Beach, FL",Regional,"Daytona Beach, FL",United States of America,367,29.2108147,-81.0228331
+6-Apr-19,"Regional Denver, CO",Regional,"Denver, CO",United States of America,640,39.7392364,-104.984862
 23-Mar-19,Regional Fortaleza,Regional,Fortaleza,Brazil,233,-3.7932167,-38.5280359
-16-Mar-19,"Regional Greensboro, NC",Regional,"Greensboro, NC",United States,389,36.0726355,-79.7919754
+16-Mar-19,"Regional Greensboro, NC",Regional,"Greensboro, NC",United States of America,389,36.0726355,-79.7919754
 16-Mar-19,Regional Perth,Regional,Perth,Australia,81,-31.9558967,115.8605784
 9-Mar-19,Regional Toronto,Regional,Toronto,Canada,358,43.6534817,-79.3839347
-23-Feb-19,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States,1056,38.6703267,-89.9845476
-19-Jan-19,"Regional Dallas, TX",Regional,"Dallas, TX",United States,802,32.7762719,-96.7968559
+23-Feb-19,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States of America,1056,38.6703267,-89.9845476
+19-Jan-19,"Regional Dallas, TX",Regional,"Dallas, TX",United States of America,802,32.7762719,-96.7968559
 15-Dec-18,Regional Harrogate,Regional,Harrogate,Great Britain,488,53.992119,-1.541812
-15-Dec-18,"Regional Anaheim, CA",Regional,"Anaheim, CA",United States,508,33.8347516,-117.911732
+15-Dec-18,"Regional Anaheim, CA",Regional,"Anaheim, CA",United States of America,508,33.8347516,-117.911732
 1-Dec-18,Regional Brisbane,Regional,Brisbane,Australia,152,-27.4689623,153.0235009
-24-Nov-18,"Regional Roanoke, VA",Regional,"Roanoke, VA",United States,664,37.270973,-79.9414313
-27-Oct-18,"Regional Portland, OR",Regional,"Portland, OR",United States,517,45.5202471,-122.674194
-6-Oct-18,"Regional Memphis, TN",Regional,"Memphis, TN",United States,788,35.146026,-90.0517786
+24-Nov-18,"Regional Roanoke, VA",Regional,"Roanoke, VA",United States of America,664,37.270973,-79.9414313
+27-Oct-18,"Regional Portland, OR",Regional,"Portland, OR",United States of America,517,45.5202471,-122.674194
+6-Oct-18,"Regional Memphis, TN",Regional,"Memphis, TN",United States of America,788,35.146026,-90.0517786
 29-Sep-18,Regional Offenbach,Regional,Offenbach,Germany,520,50.1055002,8.7610698
-15-Sep-18,"Regional Philadelphia, PA",Regional,"Philadelphia, PA",United States,803,39.9527237,-75.1635262
+15-Sep-18,"Regional Philadelphia, PA",Regional,"Philadelphia, PA",United States of America,803,39.9527237,-75.1635262
 8-Sep-18,Regional Santa Catarina,Regional,Santa Catarina,Brazil,261,-27.0628367,-51.114965
 23-Jun-18,Regional Mexico City,Regional,Mexico City,Mexico,233,19.3207722,-99.1514678
 16-Jun-18,Regional Sheffield,Regional,Sheffield,Great Britain,505,53.383331,-1.466667
 2-Jun-18,Regional Santiago,Regional,Santiago,Chile,365,-33.4376995,-70.6510671
-2-Jun-18,"Regional Madison, WI",Regional,"Madison, WI",United States,732,43.07469,-89.3841663
+2-Jun-18,"Regional Madison, WI",Regional,"Madison, WI",United States of America,732,43.07469,-89.3841663
 2-Jun-18,Regional Subang Jaya,Regional,Subang Jaya,Malaysia,173,3.051487,101.5823339
-26-May-18,"Regional Roanoke, VA",Regional,"Roanoke, VA",United States,401,37.270973,-79.9414313
+26-May-18,"Regional Roanoke, VA",Regional,"Roanoke, VA",United States of America,401,37.270973,-79.9414313
 26-May-18,Regional Melbourne,Regional,Melbourne,Australia,156,-37.8142454,144.9631732
 12-May-18,Regional Toronto,Regional,Toronto,Canada,558,43.6534817,-79.3839347
-5-May-18,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States,280,40.7596198,-111.886797
+5-May-18,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States of America,280,40.7596198,-111.886797
 21-Apr-18,Regional Jakarta,Regional,Jakarta,Indonesia,75,-6.1754049,106.827168
 14-Apr-18,Regional Sindelfingen,Regional,Sindelfingen,Germany,211,48.7084162,9.0035455
-24-Mar-18,"Regional Portland, OR",Regional,"Portland, OR",United States,469,45.5202471,-122.674194
+24-Mar-18,"Regional Portland, OR",Regional,"Portland, OR",United States of America,469,45.5202471,-122.674194
 24-Mar-18,Regional Perth,Regional,Perth,Australia,71,-31.9558967,115.8605784
-17-Mar-18,"Regional Charlotte, NC",Regional,"Charlotte, NC",United States,975,35.2272086,-80.8430827
-3-Mar-18,"Regional Costa Mesa, CA",Regional,"Costa Mesa, CA",United States,510,33.6633386,-117.903317
+17-Mar-18,"Regional Charlotte, NC",Regional,Charlotte,United States of America,975,35.2272086,-80.8430827
+3-Mar-18,"Regional Costa Mesa, CA",Regional,"Costa Mesa, CA",United States of America,510,33.6633386,-117.903317
 3-Mar-18,Regional Salvador,Regional,Salvador,Brazil,140,-12.9822499,-38.4812772
-17-Feb-18,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States,1066,38.6703267,-89.9845476
-17-Feb-18,Regional Malmö,Regional,Malmö,Sweden,276,55.6052931,13.0001566
-27-Jan-18,"Regional Dallas, TX",Regional,"Dallas, TX",United States,1052,32.7762719,-96.7968559
+17-Feb-18,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States of America,1066,38.6703267,-89.9845476
+17-Feb-18,Regional Malmo,Regional,Malmo,Sweden,276,55.6052931,13.0001566
+27-Jan-18,"Regional Dallas, TX",Regional,"Dallas, TX",United States of America,1052,32.7762719,-96.7968559
 27-Jan-18,Regional Leipzig,Regional,Leipzig,Germany,357,51.3406321,12.3747329
 27-Jan-18,Regional Sao Paulo,Regional,Sao Paulo,Brazil,384,-23.5506507,-46.6333824
 16-Dec-17,Regional Brisbane,Regional,Brisbane,Australia,82,-27.4689623,153.0235009
-16-Dec-17,"Regional Memphis, TN",Regional,"Memphis, TN",United States,947,35.146026,-90.0517786
-25-Nov-17,"Regional San Jose, CA",Regional,"San Jose, CA",United States,507,37.3361663,-121.890591
+16-Dec-17,"Regional Memphis, TN",Regional,"Memphis, TN",United States of America,947,35.146026,-90.0517786
+25-Nov-17,"Regional San Jose, CA",Regional,"San Jose, CA",United States of America,507,37.3361663,-121.890591
 14-Oct-17,Regional Belo Horizonte,Regional,Belo Horizonte,Brazil,217,-19.9227318,-43.9450948
-14-Oct-17,Regional Vancouver,Regional,Vancouver,Canada,331,49.2608724,-123.113952
-7-Oct-17,"Regional Daytona Beach, FL",Regional,"Daytona Beach, FL",United States,642,29.2108147,-81.0228331
-30-Sep-17,"Regional Hartford, CT",Regional,"Hartford, CT",United States,751,41.7661621,-72.6732726
+14-Oct-17,Regional Vancouver,Regional,"Vancouver, BC",Canada,331,49.2608724,-123.113952
+7-Oct-17,"Regional Daytona Beach, FL",Regional,"Daytona Beach, FL",United States of America,642,29.2108147,-81.0228331
+30-Sep-17,"Regional Hartford, CT",Regional,"Hartford, CT",United States of America,751,41.7661621,-72.6732726
 16-Sep-17,Regional Bremen,Regional,Bremen,Germany,346,53.0758196,8.8071646
-2-Sep-17,"Regional Fort Wayne, IN",Regional,"Fort Wayne, IN",United States,819,41.0799898,-85.1386015
+2-Sep-17,"Regional Fort Wayne, IN",Regional,"Fort Wayne, IN",United States of America,819,41.0799898,-85.1386015
 29-Jul-17,Regional Liverpool,Regional,Liverpool,Great Britain,401,53.4106,-2.97794
 24-Jun-17,Regional Perth,Regional,Perth,Australia,32,-31.9558967,115.8605784
 17-Jun-17,Regional Curitiba,Regional,Curitiba,Brazil,143,-25.4295963,-49.2712724
@@ -228,50 +228,50 @@ Date,Tournament Name,Tier,City,Country,Attendance,Latitude,Longitude
 10-Jun-17,Regional Sydney,Regional,Sydney,Australia,76,-33.8698439,151.2082848
 10-Jun-17,Regional Mexico City,Regional,Mexico City,Mexico,258,19.3207722,-99.1514678
 4-Jun-17,Regional Santiago,Regional,Santiago,Chile,270,-33.4376995,-70.6510671
-3-Jun-17,"Regional Madison, WI",Regional,"Madison, WI",United States,538,43.07469,-89.3841663
+3-Jun-17,"Regional Madison, WI",Regional,"Madison, WI",United States of America,538,43.07469,-89.3841663
 3-Jun-17,Regional Birmingham,Regional,Birmingham,Great Britain,362,52.486243,-1.890401
 27-May-17,Regional Jakarta,Regional,Jakarta,Indonesia,67,-6.1754049,106.827168
-27-May-17,"Regional Seattle, WA",Regional,"Seattle, WA",United States,404,47.6038321,-122.330062
+27-May-17,"Regional Seattle, WA",Regional,"Seattle, WA",United States of America,404,47.6038321,-122.330062
 13-May-17,Regional Toronto,Regional,Toronto,Canada,351,43.6534817,-79.3839347
-6-May-17,"Regional Roanoke, VA",Regional,"Roanoke, VA",United States,673,37.270973,-79.9414313
+6-May-17,"Regional Roanoke, VA",Regional,"Roanoke, VA",United States of America,673,37.270973,-79.9414313
 6-May-17,Regional Kuala Lumpur,Regional,Kuala Lumpur,Malaysia,135,3.1516964,101.6942371
 6-May-17,Regional Sao Paulo,Regional,Sao Paulo,Brazil,206,-23.5506507,-46.6333824
-8-Apr-17,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States,304,40.7596198,-111.886797
-25-Mar-17,"Regional Portland, OR",Regional,"Portland, OR",United States,309,45.5202471,-122.674194
+8-Apr-17,"Regional Salt Lake City, UT",Regional,"Salt Lake City, UT",United States of America,304,40.7596198,-111.886797
+25-Mar-17,"Regional Portland, OR",Regional,"Portland, OR",United States of America,309,45.5202471,-122.674194
 25-Mar-17,Regional Buenos Aires,Regional,Buenos Aires,Argentina,136,-34.6095579,-58.3887904
-18-Mar-17,Regional Malmö,Regional,Malmö,Sweden,191,55.6052931,13.0001566
+18-Mar-17,Regional Malmo,Regional,Malmo,Sweden,191,55.6052931,13.0001566
 4-Mar-17,Regional Sheffield,Regional,Sheffield,Great Britain,317,53.383,-1.4659
-4-Mar-17,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States,705,38.6703267,-89.9845476
-18-Feb-17,"Regional Anaheim, CA",Regional,"Anaheim, CA",United States,526,33.8347516,-117.911732
+4-Mar-17,"Regional Collinsville, IL",Regional,"Collinsville, IL",United States of America,705,38.6703267,-89.9845476
+18-Feb-17,"Regional Anaheim, CA",Regional,"Anaheim, CA",United States of America,526,33.8347516,-117.911732
 4-Feb-17,Regional Fortaleza,Regional,Fortaleza,Brazil,155,-3.7932167,-38.5280359
 14-Jan-17,Regional Leipzig,Regional,Leipzig,Germany,146,51.3406321,12.3747329
-14-Jan-17,"Regional Athens, GA",Regional,"Athens, GA",United States,682,33.9597677,-83.376398
-31-Dec-16,"Regional Dallas, TX",Regional,"Dallas, TX",United States,518,32.7762719,-96.7968559
-17-Dec-16,"Regional San Jose, CA",Regional,"San Jose, CA",United States,397,37.3361663,-121.890591
-26-Nov-16,"Regional Fort Wayne, IN",Regional,"Fort Wayne, IN",United States,635,41.0799898,-85.1386015
+14-Jan-17,"Regional Athens, GA",Regional,"Athens, GA",United States of America,682,33.9597677,-83.376398
+31-Dec-16,"Regional Dallas, TX",Regional,"Dallas, TX",United States of America,518,32.7762719,-96.7968559
+17-Dec-16,"Regional San Jose, CA",Regional,"San Jose, CA",United States of America,397,37.3361663,-121.890591
+26-Nov-16,"Regional Fort Wayne, IN",Regional,"Fort Wayne, IN",United States of America,635,41.0799898,-85.1386015
 19-Nov-16,Regional Dortmund,Regional,Dortmund,Germany,303,51.5142273,7.4652789
 5-Nov-16,Regional Liverpool,Regional,Liverpool,Great Britain,273,53.4106,-2.9779
-5-Nov-16,"Regional Philadelphia, PA",Regional,"Philadelphia, PA",United States,644,39.9527237,-75.1635262
-15-Oct-16,"Regional Orlando, FL",Regional,"Orlando, FL",United States,617,28.5421218,-81.379045
-1-Oct-16,"Regional Phoenix, AZ",Regional,"Phoenix, AZ",United States,460,33.4484367,-112.074141
+5-Nov-16,"Regional Philadelphia, PA",Regional,"Philadelphia, PA",United States of America,644,39.9527237,-75.1635262
+15-Oct-16,"Regional Orlando, FL",Regional,"Orlando, FL",United States of America,617,28.5421218,-81.379045
+1-Oct-16,"Regional Phoenix, AZ",Regional,"Phoenix, AZ",United States of America,460,33.4484367,-112.074141
 20-Feb-16,European Challenge Cup 2016,Regional,European Challenge Cup 2016,Netherlands,372,52.1326,5.2913
 7-Feb-15,European Challenge Cup 2015,Regional,European Challenge Cup 2015,Netherlands,324,52.1326,5.2913
 15-Feb-14,European Challenge Cup 2014,Regional,European Challenge Cup 2014,Netherlands,306,52.1326,5.2913
 9-Feb-13,European Challenge Cup 2013,Regional,European Challenge Cup 2013,Netherlands,249,52.1326,5.2913
 18-Feb-12,European Challenge Cup 2012,Regional,European Challenge Cup 2012,Netherlands,231,52.1326,5.2913
 19-Feb-11,European Challenge Cup 2011,Regional,European Challenge Cup 2011,Netherlands,193,52.1326,5.2913
-28-Aug-26,World Championships 2026,Worlds,N/A,United States,797,29.8249495,-95.4786754
-15-Aug-25,World Championships 2025,Worlds,N/A,United States,721,29.8249495,-95.4786754
-16-Aug-24,World Championships 2024,Worlds,N/A,United States,1147,29.8249495,-95.4786754
+28-Aug-26,World Championships 2026,Worlds,N/A,United States of America,797,29.8249495,-95.4786754
+15-Aug-25,World Championships 2025,Worlds,N/A,United States of America,721,29.8249495,-95.4786754
+16-Aug-24,World Championships 2024,Worlds,N/A,United States of America,1147,29.8249495,-95.4786754
 11-Aug-23,World Championships 2023,Worlds,N/A,Japan,170,16.101474,120.3786993
 18-Aug-22,World Championships 2022,Worlds,N/A,Great Britain,210,55.378051,-3.435973
-17-Aug-19,World Championships 2019,Worlds,N/A,United States,118,29.8249495,-95.4786754
-25-Aug-18,World Championships 2018,Worlds,N/A,United States,123,29.8249495,-95.4786754
-19-Aug-17,World Championships 2017,Worlds,N/A,United States,130,29.8249495,-95.4786754
-20-Aug-16,World Championships 2016,Worlds,N/A,United States,112,29.8249495,-95.4786754
-22-Aug-15,World Championships 2015,Worlds,N/A,United States,128,29.8249495,-95.4786754
-16-Aug-14,World Championships 2014,Worlds,N/A,United States,231,29.8249495,-95.4786754
+17-Aug-19,World Championships 2019,Worlds,N/A,United States of America,118,29.8249495,-95.4786754
+25-Aug-18,World Championships 2018,Worlds,N/A,United States of America,123,29.8249495,-95.4786754
+19-Aug-17,World Championships 2017,Worlds,N/A,United States of America,130,29.8249495,-95.4786754
+20-Aug-16,World Championships 2016,Worlds,N/A,United States of America,112,29.8249495,-95.4786754
+22-Aug-15,World Championships 2015,Worlds,N/A,United States of America,128,29.8249495,-95.4786754
+16-Aug-14,World Championships 2014,Worlds,N/A,United States of America,231,29.8249495,-95.4786754
 10-Aug-13,World Championships 2013,Worlds,N/A,Canada,209,-24.9330169,-53.4600598
-14-Aug-12,World Championships 2012,Worlds,N/A,United States,127,29.8249495,-95.4786754
-13-Aug-11,World Championships 2011,Worlds,N/A,United States,122,29.8249495,-95.4786754
-14-Aug-10,World Championships 2010,Worlds,N/A,United States,115,29.8249495,-95.4786754
+14-Aug-12,World Championships 2012,Worlds,N/A,United States of America,127,29.8249495,-95.4786754
+13-Aug-11,World Championships 2011,Worlds,N/A,United States of America,122,29.8249495,-95.4786754
+14-Aug-10,World Championships 2010,Worlds,N/A,United States of America,115,29.8249495,-95.4786754

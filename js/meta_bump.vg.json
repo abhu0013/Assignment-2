@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "The Competitive Meta: Top 6 Elements Ranked by Series",
+  "data": {"url": "Source 1/pokemon-tcg-data-master 1999-2023.csv"},
+  "transform": [
+    {"filter": "datum.supertype == 'Pokémon'"},
+    {"filter": "datum.types != null"},
+    {
+      "filter": "datum.series != 'Other' && datum.series != 'POP' && datum.series != 'NP' && datum.series != 'E-Card'"
+    },
+    {"calculate": "toDate(datum.release_date)", "as": "date_obj"},
+    {
+      "calculate": "indexof(datum.types, 'Grass') > -1 ? 'Grass' : indexof(datum.types, 'Fire') > -1 ? 'Fire' : indexof(datum.types, 'Water') > -1 ? 'Water' : indexof(datum.types, 'Lightning') > -1 ? 'Lightning' : indexof(datum.types, 'Psychic') > -1 ? 'Psychic' : indexof(datum.types, 'Fighting') > -1 ? 'Fighting' : indexof(datum.types, 'Darkness') > -1 ? 'Darkness' : indexof(datum.types, 'Metal') > -1 ? 'Metal' : indexof(datum.types, 'Dragon') > -1 ? 'Dragon' : indexof(datum.types, 'Colorless') > -1 ? 'Colorless' : 'Other'",
+      "as": "Clean_Type"
+    },
+    {"filter": "datum.Clean_Type != 'Other'"},
+    {
+      "aggregate": [
+        {"op": "count", "as": "type_count"},
+        {"op": "min", "field": "date_obj", "as": "era_sort"}
+      ],
+      "groupby": ["series", "Clean_Type"]
+    },
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "type_count", "order": "descending"}],
+      "groupby": ["series"]
+    },
+    {"filter": "datum.rank <= 6"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Card Series (Historical Timeline)",
+      "sort": {"op": "min", "field": "era_sort", "order": "ascending"},
+      "axis": {"labelAngle": -45, "grid": true}
+    },
+    "y": {
+      "field": "rank",
+      "type": "ordinal",
+      "title": "Popularity Rank",
+      "sort": "ascending",
+      "axis": {"domain": false, "tickSize": 0}
+    },
+    "color": {
+      "field": "Clean_Type",
+      "type": "nominal",
+      "title": "Pokémon Type",
+      "scale": {
+        "domain": [
+          "Grass", "Fire", "Water", "Lightning", "Psychic", 
+          "Fighting", "Darkness", "Metal", "Dragon", "Colorless"
+        ],
+        "range": [
+          "#78C850", "#F08030", "#6890F0", "#F8D030", "#F85888", 
+          "#C03028", "#705848", "#B8B8D0", "#7038F8", "#A8A878"
+        ]
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "monotone",
+        "strokeWidth": 5,
+        "opacity": 0.8
+      }
+    },
+    {"mark": {"type": "circle", "size": 200, "opacity": 1}},
+    {
+      "data": {
+        "values": [
+          {
+            "series": "Diamond & Pearl",
+            "rank": 1,
+            "text": "Psychic elements dominate the D&P and Platinum meta"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dx": 0,
+        "dy": -20,
+        "fontWeight": "bold",
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {"field": "series"},
+        "y": {"field": "rank"},
+        "text": {"field": "text"},
+        "color": {"value": "#F85888"}
+      }
+    }
+  ]
+}

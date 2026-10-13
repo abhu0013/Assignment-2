@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "Historical Power Creep: The Rise of HP (1999-2023)",
+  "data": {
+    "url": "Source 1/pokemon-tcg-data-master 1999-2023.csv"
+  },
+  "transform": [
+    {"calculate": "toNumber(datum.hp)", "as": "numeric_hp"},
+    {"filter": "datum.numeric_hp > 0 && datum.numeric_hp <= 400"},
+    {"filter": "datum.supertype == 'Pokémon'"},
+    {
+      "calculate": "indexof(datum.rarity, 'Secret') > -1 || indexof(datum.rarity, 'Rainbow') > -1 || indexof(datum.rarity, 'Hyper') > -1 ? 'Secret Rare' : indexof(datum.rarity, 'Ultra') > -1 || indexof(datum.rarity, 'V') > -1 || indexof(datum.rarity, 'EX') > -1 || indexof(datum.rarity, 'GX') > -1 || indexof(datum.rarity, 'Illustration') > -1 ? 'Ultra Rare' : datum.rarity == 'Common' || datum.rarity == 'Uncommon' ? 'Common / Uncommon' : 'Standard Rare'",
+      "as": "Rarity_Category"
+    }
+  ],
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "rarity_highlight",
+          "select": {"type": "point", "fields": ["Rarity_Category"]},
+          "bind": "legend"
+        },
+        {
+          "name": "grid",
+          "select": "interval",
+          "bind": "scales"
+        }
+      ],
+      "mark": {"type": "circle", "size": 60},
+      "encoding": {
+        "x": {
+          "field": "release_date",
+          "type": "temporal",
+          "title": "Year of Release",
+          "axis": {"grid": false}
+        },
+        "y": {
+          "field": "numeric_hp",
+          "type": "quantitative",
+          "title": "Hit Points (HP)",
+          "scale": {"domain": [10, 360]}
+        },
+        "color": {
+          "field": "Rarity_Category",
+          "type": "nominal",
+          "title": "Card Rarity",
+          "scale": {
+            "domain": ["Common / Uncommon", "Standard Rare", "Ultra Rare", "Secret Rare"],
+            "range": ["#a6cee3", "#1f78b4", "#e3350d", "#ffcb05"]
+          }
+        },
+        "opacity": {
+          "condition": {"param": "rarity_highlight", "value": 0.6},
+          "value": 0.05
+        },
+        "tooltip": [
+          {"field": "name", "type": "nominal", "title": "Card Name"},
+          {"field": "numeric_hp", "type": "quantitative", "title": "HP"},
+          {"field": "release_date", "type": "temporal", "format": "%Y", "title": "Release Year"},
+          {"field": "rarity", "type": "nominal", "title": "Original Rarity"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#333333",
+        "strokeWidth": 3,
+        "strokeDash": [4, 4]
+      },
+      "encoding": {
+        "x": {
+          "field": "release_date",
+          "type": "temporal",
+          "timeUnit": "year"
+        },
+        "y": {
+          "field": "numeric_hp",
+          "type": "quantitative",
+          "aggregate": "max"
+        },
+        "tooltip": [
+          {"field": "release_date", "type": "temporal", "timeUnit": "year", "title": "Year"},
+          {"field": "numeric_hp", "type": "quantitative", "aggregate": "max", "title": "Max HP Ceiling"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "date": "2020-01-01", 
+            "hp": 340, 
+            "text": "VMAX Era pushes the HP ceiling to 340"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "dy": -10,
+        "fontWeight": "bold",
+        "fontSize": 12,
+        "color": "#e3350d"
+      },
+      "encoding": {
+        "x": {"field": "date", "type": "temporal"},
+        "y": {"field": "hp", "type": "quantitative"},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    }
+  ]
+}

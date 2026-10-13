@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 550,
+  "title": "The HP Gap: Minimum vs. Maximum Hit Points by Series",
+  "data": {
+    "url": "Source 1/pokemon-tcg-data-master 1999-2023.csv"
+  },
+  "transform": [
+    {"calculate": "toNumber(datum.hp)", "as": "numeric_hp"},
+    {"filter": "datum.numeric_hp > 0 && datum.numeric_hp <= 400"},
+    {"filter": "datum.supertype == 'Pokémon'"},
+    {"filter": "datum.series != null"},
+    {"calculate": "toDate(datum.release_date)", "as": "date_obj"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "series",
+      "type": "nominal",
+      "title": "Card Series (Historical Order)",
+      "sort": {"op": "min", "field": "date_obj", "order": "ascending"},
+      "axis": {"grid": true, "gridColor": "#f0f0f0"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#b0b0b0", "strokeWidth": 2.5},
+      "encoding": {
+        "x": {
+          "aggregate": "min",
+          "field": "numeric_hp",
+          "type": "quantitative",
+          "title": "Hit Points (HP)",
+          "scale": {"domain": [10, 360]}
+        },
+        "x2": {
+          "aggregate": "max",
+          "field": "numeric_hp"
+        },
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Series Era"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 120, "color": "#2a75bb", "opacity": 1},
+      "encoding": {
+        "x": {
+          "aggregate": "min",
+          "field": "numeric_hp",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Series"},
+          {"aggregate": "min", "field": "numeric_hp", "type": "quantitative", "title": "Minimum HP Floor"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 120, "color": "#e3350d", "opacity": 1},
+      "encoding": {
+        "x": {
+          "aggregate": "max",
+          "field": "numeric_hp",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Series"},
+          {"aggregate": "max", "field": "numeric_hp", "type": "quantitative", "title": "Maximum HP Ceiling"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "series": "Sword & Shield", 
+            "hp": 340, 
+            "text": "VMAX mechanic creates largest HP gap"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -12,
+        "dy": -5,
+        "fontWeight": "bold",
+        "fontSize": 11,
+        "color": "#e3350d"
+      },
+      "encoding": {
+        "y": {"field": "series", "type": "nominal"},
+        "x": {"field": "hp", "type": "quantitative"},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    }
+  ]
+}

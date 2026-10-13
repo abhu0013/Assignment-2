@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "title": "Printing Bias: Type Distribution Across Card Series",
+  "data": {
+    "url": "Source 1/pokemon-tcg-data-master 1999-2023.csv"
+  },
+  "transform": [
+    {"filter": "datum.supertype == 'Pokémon'"},
+    {"filter": "datum.types != null"},
+    {"filter": "datum.series != null"},
+    {"calculate": "toDate(datum.release_date)", "as": "date_obj"},
+    {
+      "calculate": "indexof(datum.types, 'Grass') > -1 ? 'Grass' : indexof(datum.types, 'Fire') > -1 ? 'Fire' : indexof(datum.types, 'Water') > -1 ? 'Water' : indexof(datum.types, 'Lightning') > -1 ? 'Lightning' : indexof(datum.types, 'Psychic') > -1 ? 'Psychic' : indexof(datum.types, 'Fighting') > -1 ? 'Fighting' : indexof(datum.types, 'Darkness') > -1 ? 'Darkness' : indexof(datum.types, 'Metal') > -1 ? 'Metal' : indexof(datum.types, 'Fairy') > -1 ? 'Fairy' : indexof(datum.types, 'Dragon') > -1 ? 'Dragon' : indexof(datum.types, 'Colorless') > -1 ? 'Colorless' : 'Other'",
+      "as": "Clean_Type"
+    },
+    {"filter": "datum.Clean_Type != 'Other'"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rect", "stroke": "white", "strokeWidth": 1},
+      "encoding": {
+        "x": {
+          "field": "series",
+          "type": "nominal",
+          "title": "Card Series (Historical Order)",
+          "sort": {"op": "min", "field": "date_obj", "order": "ascending"},
+          "axis": {"labelAngle": -45}
+        },
+        "y": {
+          "field": "Clean_Type",
+          "type": "nominal",
+          "title": "Pokémon Type",
+          "scale": {
+            "domain": ["Water", "Grass", "Psychic", "Colorless", "Fire", "Fighting", "Lightning", "Darkness", "Metal", "Dragon", "Fairy"]
+          }
+        },
+        "color": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "title": "Cards Printed",
+          "scale": {"scheme": "oranges"}
+        },
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Series"},
+          {"field": "Clean_Type", "type": "nominal", "title": "Type"},
+          {"aggregate": "count", "type": "quantitative", "title": "Total Cards Printed"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"series": "Black & White", "Clean_Type": "Dragon", "text": "Dragon type introduced"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "dy": -10,
+        "dx": 20,
+        "align": "left",
+        "fontWeight": "bold",
+        "fontSize": 11,
+        "color": "#333"
+      },
+      "encoding": {
+        "x": {
+          "field": "series",
+          "type": "nominal",
+          "sort": {"op": "min", "field": "date_obj", "order": "ascending"}
+        },
+        "y": {"field": "Clean_Type", "type": "nominal"},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    }
+  ]
+}
