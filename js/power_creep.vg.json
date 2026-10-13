@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 450,
   "title": "Historical Power Creep: The Rise of HP (1999-2023)",
   "data": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 120,
   "title": {
     "text": "HP Density Shift: Base (1999) vs Black & White (2011) vs Sword & Shield (2020)",

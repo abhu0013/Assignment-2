@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 350,
   "title": "The Deck Ecosystem: Pokémon, Trainers, and Energy",
   "data": {
