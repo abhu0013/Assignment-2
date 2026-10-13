@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 400,
   "title": "Historical Distribution of Pokémon Types (1999-2023)",
   "data": {

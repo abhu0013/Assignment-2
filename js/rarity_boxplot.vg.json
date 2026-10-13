@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 400,
   "title": "Statistical HP Spread: Lower Tier vs. Premium Rarities",
   "data": {

@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
+  "width": "container",
   "height": 450,
   "title": "The Competitive Meta: Top 6 Elements Ranked by Series",
   "data": {"url": "Source 1/pokemon-tcg-data-master 1999-2023.csv"},

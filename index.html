@@ -3,137 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive visual analysis of the Pokémon Trading Card Game's global cultural economy.">
   <title>Pokémon TCG: Cultural Economy</title>
-  
+
   <!-- Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  
+
+  <!-- Accessible, modern typeface -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <div class="page-container">
-    <header>
+  <main class="page-container">
+    <header class="hero-card">
+      <p class="eyebrow">FIT3179 · Data Visualisation 2</p>
       <h1>From Niche Hobby to Global Phenomenon</h1>
-      <p>How the Pokémon TCG Cultivated a Competitive Cultural Economy</p>
+      <p class="hero-subtitle">How the Pokémon TCG cultivated a competitive cultural economy</p>
+      <p class="hero-introduction">
+        Explore how tournaments, card design, and competitive strategy have changed the
+        Pokémon Trading Card Game across more than two decades.
+      </p>
     </header>
 
-    <div class="dashboard-grid">
-      <!-- Proportional Symbol Map Section -->
-      <div class="map-container">
-        <div class="text-context">
-          <h2>The Global Tournament Footprint</h2>
-          <p>Since its inception, competitive Pokémon has expanded far beyond its Tokyo roots. Today, mega-hubs across Australia and Malaysia host thousands of players, driving local tourism and cultural exchange.</p>
+    <section class="dashboard-section" aria-labelledby="global-footprint-heading">
+      <div class="section-heading">
+        <p class="section-kicker">01 · Place and participation</p>
+        <h2 id="global-footprint-heading">A global tournament footprint</h2>
+        <p>Competition has expanded from its Tokyo roots into a connected network of regional and international hubs.</p>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dashboard-card">
+          <div class="text-context">
+            <h3>Global tournament locations</h3>
+            <p>Major hubs across Australia and Malaysia host thousands of players, driving local tourism and cultural exchange.</p>
+          </div>
+          <div class="map-container" id="proportional_map" aria-label="Proportional symbol map of tournament locations"></div>
         </div>
-        <div id="proportional_map"></div>
-      </div>
-      
-      <!-- Choropleth Map Section -->
-      <div class="map-container">
-        <div class="text-context">
-          <h2>National Participation Density</h2>
-          <p>By mapping total historical attendance, we can see how the competitive scene's center of gravity is distributed at a national level.</p>
+
+        <div class="dashboard-card">
+          <div class="text-context">
+            <h3>National participation density</h3>
+            <p>Total historical attendance shows how the competitive scene's centre of gravity is distributed nationally.</p>
+          </div>
+          <div class="map-container" id="choropleth_map" aria-label="Choropleth map of national participation"></div>
         </div>
-        <div id="choropleth_map"></div>
-      </div>
-      
-      <!-- Flow Map Section -->
-      <div class="map-container">
-        <div class="text-context">
-          <h2>Cultural Export: From Tokyo to the World</h2>
-          <p>Tracing the expansion of major international and global championship events from the game's birthplace in Japan to modern cultural hubs.</p>
+
+        <div class="dashboard-card full-width">
+          <div class="text-context">
+            <h3>Cultural export: from Tokyo to the world</h3>
+            <p>Tracing international and global championship events shows how the game's birthplace connected with modern cultural hubs.</p>
+          </div>
+          <div class="map-container" id="flow_map" aria-label="Flow map showing the international expansion of tournaments"></div>
         </div>
-        <div id="flow_map"></div>
+      </div>
+    </section>
+
+    <section class="dashboard-section" aria-labelledby="game-evolution-heading">
+      <div class="section-heading">
+        <p class="section-kicker">02 · Cards and competition</p>
+        <h2 id="game-evolution-heading">The evolution of the game</h2>
+        <p>Card design, elemental balance, and competitive strategy have shifted alongside the game's expanding audience.</p>
       </div>
 
-      <!-- Analytical Charts Section -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Evolution of the Game: Power Creep</h2>
-        <p>While the physical locations of tournaments expanded globally, the cards themselves underwent a drastic historical shift. Over 25 years, the maximum Hit Points (HP) of Pokémon cards skyrocketed i.e. a phenomenon known as "power creep." This forced players to constantly upgrade their collections to remain competitive.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="scatter_plot"></div>
-      </div>
+      <div class="dashboard-grid">
+        <div class="dashboard-card full-width">
+          <div class="text-context">
+            <h3>Power creep</h3>
+            <p>Over 25 years, the maximum Hit Points (HP) of Pokémon cards have increased dramatically, encouraging players to continually upgrade their collections.</p>
+          </div>
+          <div class="map-container" id="scatter_plot" aria-label="Scatter plot showing the increase in Pokémon card Hit Points"></div>
+        </div>
 
-      <!-- Analytical Chart Section -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Elemental Balance</h2>
-        <p>Beyond power inflation, the game's core mechanics rely on elemental types. By analyzing the proportion of types printed each year, we can see how the designers balanced the game and identify eras where certain elements heavily dominated the competitive meta.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="type_area_chart"></div>
-      </div>
-      
-      <!-- Analytical Chart 3: Dumbbell Plot -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Expanding Power Gap</h2>
-        <p>By comparing historical expansion series, we can track the structural boundaries of the game. While the minimum Hit Points (HP) of basic Pokémon have remained relatively stable since the Wizards of the Coast era, the maximum HP ceiling has violently stretched. This growing chasm forces modern players to adopt highly polarized deck strategies.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="dumbbell_plot"></div>
-      </div>
-      
-      <!-- Analytical Chart 4: Type Heatmap -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Elemental Meta: Printing Bias</h2>
-        <p>By mapping elemental types across historical series, we can visualize the structural design of the game's expansions. This heatmap reveals distinct printing biases, showing how certain eras heavily favored specific elements to artificially shift the competitive meta.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="type_heatmap"></div>
-      </div>
+        <div class="dashboard-card full-width">
+          <div class="text-context">
+            <h3>The elemental balance</h3>
+            <p>Tracking the proportion of types printed each year reveals how designers balanced the game's mechanics and competitive meta.</p>
+          </div>
+          <div class="map-container" id="type_area_chart" aria-label="Area chart showing the distribution of Pokémon types over time"></div>
+        </div>
 
-      <!-- Analytical Chart 5: Ridgeline Density Plot -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Shape of Power: HP Distribution</h2>
-        <p>Looking at the absolute maximum HP only tells part of the story. By analyzing the statistical density of Hit Points across three distinct eras that are Base (1999), Black & White (2011), and Sword & Shield (2020), we can see how the entire median curve of the game has shifted rightward, forcing the "average" Pokémon to bulk up just to survive.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="hp_ridgeline"></div>
-      </div>
+        <div class="dashboard-card">
+          <div class="text-context">
+            <h3>The expanding power gap</h3>
+            <p>Minimum HP has stayed relatively stable while the maximum HP ceiling has stretched, creating increasingly polarised deck strategies.</p>
+          </div>
+          <div class="map-container" id="dumbbell_plot" aria-label="Dumbbell plot comparing minimum and maximum Hit Points"></div>
+        </div>
 
-      <!-- Analytical Chart 6: Meta Bump Chart -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Shifting Meta: Top Elements by Era</h2>
-        <p>Raw printing volume only tells part of the story; competitive balance is driven by ranking. This bump chart tracks the top six most popular Pokémon types across every major series. Notice how Water and Grass consistently fight for the #1 spot, while elements like Psychic and Darkness fluctuate wildly depending on the era's specific mechanical themes.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="meta_bump_chart"></div>
-      </div>
+        <div class="dashboard-card">
+          <div class="text-context">
+            <h3>Elemental meta: printing bias</h3>
+            <p>This heatmap reveals how historical expansions favoured particular elements and shifted the competitive meta.</p>
+          </div>
+          <div class="map-container" id="type_heatmap" aria-label="Heatmap of Pokémon type printing by series"></div>
+        </div>
 
-      <!-- Analytical Chart 7: Box Plot -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Cost of Competitiveness: HP by Rarity</h2>
-        <p>Power creep is not distributed equally. By analyzing the statistical spread of Hit Points across distinct rarity tiers, it becomes clear that modern competitive viability is paywalled. The median HP of 'Ultra Rare' and 'Secret Rare' cards vastly outscales standard Common and Uncommon cards, leaving lower-tier cards statistically unviable in tournament play.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="rarity_boxplot"></div>
-      </div>
+        <div class="dashboard-card">
+          <div class="text-context">
+            <h3>The shape of power</h3>
+            <p>Comparing Base, Black &amp; White, and Sword &amp; Shield shows how the typical HP distribution shifted to the right over time.</p>
+          </div>
+          <div class="map-container" id="hp_ridgeline" aria-label="Ridgeline plot showing Hit Point distributions across eras"></div>
+        </div>
 
-      <!-- Analytical Chart 8: Streamgraph -->
-      <div class="text-context" style="margin-top: 60px;">
-        <h2>The Deck Ecosystem: Pokémon vs. Trainers</h2>
-        <p>A competitive deck cannot function on Pokémon alone. By tracking the historical print volume across all three major card supertypes, we can see how the game's designers began printing a massive influx of 'Trainer' cards (items and supporters) in the modern era to balance out the overwhelming power creep of the Pokémon themselves.</p>
-      </div>
-      
-      <div class="map-container">
-        <div id="ecosystem_streamgraph"></div>
-      </div>
+        <div class="dashboard-card">
+          <div class="text-context">
+            <h3>The shifting meta</h3>
+            <p>This bump chart tracks the six most popular Pokémon types across major series, highlighting changes in competitive priorities.</p>
+          </div>
+          <div class="map-container" id="meta_bump_chart" aria-label="Bump chart showing the ranking of Pokémon types by era"></div>
+        </div>
 
-      <!-- Future charts will go here -->
-    </div>
-  </div>
+        <div class="dashboard-card full-width">
+          <div class="text-context">
+            <h3>The cost of competitiveness</h3>
+            <p>HP varies across rarity tiers, helping explain why modern competitive viability can favour higher-rarity cards.</p>
+          </div>
+          <div class="map-container" id="rarity_boxplot" aria-label="Box plot comparing Hit Points across card rarities"></div>
+        </div>
+
+        <div class="dashboard-card full-width">
+          <div class="text-context">
+            <h3>The deck ecosystem: Pokémon versus Trainers</h3>
+            <p>Tracking the print volume of the three major card supertypes shows the growing role of Trainer cards in balancing the power of Pokémon.</p>
+          </div>
+          <div class="map-container" id="ecosystem_streamgraph" aria-label="Streamgraph showing the card ecosystem over time"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="academic-footer">
+      <p class="footer-title">FIT3179 · Pokémon TCG Cultural Economy</p>
+      <div class="footer-details">
+        <span><strong>Name:</strong> Ahmed Naeem Bhuri</span>
+        <span><strong>Student ID:</strong> 35446420</span>
+        <span><strong>Date:</strong> 14 October 2026</span>
+      </div>
+      <p class="data-sources">
+        <strong>Data sources:</strong>
+        <a href="https://www.kaggle.com/datasets/adampq/pokemon-tcg-all-cards-1999-2023/data" target="_blank" rel="noopener noreferrer">Kaggle card dataset</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://limitlesstcg.com/tournaments?time=all&amp;type=worlds&amp;format=all&amp;region=all&amp;show=100" target="_blank" rel="noopener noreferrer">Limitless TCG tournament data</a>
+      </p>
+    </footer>
+  </main>
 
   <script>
-    // Embed the Proportional Symbol Map
     vegaEmbed('#proportional_map', 'js/proportional_map.vg.json').catch(console.error);
     vegaEmbed('#choropleth_map', 'js/choropleth_map.vg.json').catch(console.error);
     vegaEmbed('#flow_map', 'js/flow_map.vg.json').catch(console.error);
@@ -146,6 +166,5 @@
     vegaEmbed('#rarity_boxplot', 'js/rarity_boxplot.vg.json').catch(console.error);
     vegaEmbed('#ecosystem_streamgraph', 'js/ecosystem.stream.vg.json').catch(console.error);
   </script>
-
 </body>
 </html>
