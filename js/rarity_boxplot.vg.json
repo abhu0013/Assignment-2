@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "title": "Statistical HP Spread: Lower Tier vs. Premium Rarities",
+  "data": {
+    "url": "Source 1/pokemon-tcg-data-master 1999-2023.csv"
+  },
+  "transform": [
+    {"calculate": "toNumber(datum.hp)", "as": "numeric_hp"},
+    {"filter": "datum.numeric_hp > 0 && datum.numeric_hp <= 400"},
+    {"filter": "datum.supertype == 'Pokémon'"},
+    {
+      "calculate": "indexof(datum.rarity, 'Secret') > -1 || indexof(datum.rarity, 'Rainbow') > -1 || indexof(datum.rarity, 'Hyper') > -1 ? 'Secret Rare' : indexof(datum.rarity, 'Ultra') > -1 || indexof(datum.rarity, 'V') > -1 || indexof(datum.rarity, 'EX') > -1 || indexof(datum.rarity, 'GX') > -1 ? 'Ultra Rare' : indexof(datum.rarity, 'Holo') > -1 ? 'Holo Rare' : datum.rarity == 'Rare' ? 'Standard Rare' : datum.rarity == 'Uncommon' ? 'Uncommon' : datum.rarity == 'Common' ? 'Common' : 'Other'",
+      "as": "Clean_Rarity"
+    },
+    {"filter": "datum.Clean_Rarity != 'Other'"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "boxplot", "extent": "min-max", "size": 40},
+      "encoding": {
+        "x": {
+          "field": "Clean_Rarity",
+          "type": "nominal",
+          "title": "Card Rarity (Tiered)",
+          "sort": ["Common", "Uncommon", "Standard Rare", "Holo Rare", "Ultra Rare", "Secret Rare"],
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "numeric_hp",
+          "type": "quantitative",
+          "title": "Hit Points (HP)",
+          "scale": {"domain": [10, 360]}
+        },
+        "color": {
+          "field": "Clean_Rarity",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": ["Common", "Uncommon", "Standard Rare", "Holo Rare", "Ultra Rare", "Secret Rare"],
+            "range": ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#e3350d", "#ffcb05"]
+          }
+        },
+        "tooltip": [
+          {"field": "Clean_Rarity", "type": "nominal", "title": "Rarity Tier"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "Clean_Rarity": "Ultra Rare", 
+            "numeric_hp": 350, 
+            "text": "Premium tiers dominate the highest HP brackets"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "dy": -15,
+        "fontWeight": "bold",
+        "fontSize": 12,
+        "color": "#e3350d"
+      },
+      "encoding": {
+        "x": {
+          "field": "Clean_Rarity",
+          "type": "nominal",
+          "title": "Card Rarity (Tiered)",
+          "sort": ["Common", "Uncommon", "Standard Rare", "Holo Rare", "Ultra Rare", "Secret Rare"],
+          "axis": {"labelAngle": 0}
+        },
+        "y": {"field": "numeric_hp", "type": "quantitative"},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    }
+  ]
+}

@@ -3,7 +3,10 @@
   "width": 800,
   "height": 450,
   "title": "Historical Attendance at Major Pokémon TCG Events",
-  "projection": {"type": "equirectangular"},
+  "projection": {
+    "type": "equirectangular",
+    "rotate": [-140, 0, 0]
+  },
   "layer": [
     {
       "data": {
@@ -14,7 +17,7 @@
     },
     {
       "data": {
-        "url": "data/pokemon_championships.csv"
+        "url": "Source 2/pokemon_championships.csv"
       },
       "mark": {"type": "circle", "opacity": 0.8, "stroke": "white", "strokeWidth": 1},
       "encoding": {
@@ -41,6 +44,51 @@
           {"field": "attendance", "type": "quantitative", "format": ",", "title": "Players"}
         ]
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -37.8136, 
+            "lon": 144.9631, 
+            "text_lat": -50, 
+            "text_lon": 115, 
+            "text": "Melbourne: Oceania's Premier Hub"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule", 
+            "color": "#7f7f7f", 
+            "strokeDash": [3, 3],
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude2": {"field": "text_lon"},
+            "latitude2": {"field": "text_lat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "dy": -5,
+            "fontWeight": "bold",
+            "fontSize": 12,
+            "color": "#e3350d"
+          },
+          "encoding": {
+            "longitude": {"field": "text_lon", "type": "quantitative"},
+            "latitude": {"field": "text_lat", "type": "quantitative"},
+            "text": {"field": "text", "type": "nominal"}
+          }
+        }
+      ]
     }
   ]
 }

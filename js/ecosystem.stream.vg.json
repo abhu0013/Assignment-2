@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 350,
+  "title": "The Deck Ecosystem: Pokémon, Trainers, and Energy",
+  "data": {
+    "url": "Source 1/pokemon-tcg-data-master 1999-2023.csv"
+  },
+  "transform": [
+    {"filter": "datum.supertype != null"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "area", "interpolate": "monotone", "opacity": 0.85},
+      "encoding": {
+        "x": {
+          "field": "release_date",
+          "type": "temporal",
+          "timeUnit": "year",
+          "title": "Release Year",
+          "axis": {"grid": false}
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "stack": "center",
+          "title": "Volume of Cards Printed",
+          "axis": null
+        },
+        "color": {
+          "field": "supertype",
+          "type": "nominal",
+          "title": "Card Supertype",
+          "scale": {
+            "domain": ["Pokémon", "Trainer", "Energy"],
+            "range": ["#2a75bb", "#ffcb05", "#4caf50"]
+          }
+        },
+        "tooltip": [
+          {"field": "supertype", "type": "nominal", "title": "Type"},
+          {"field": "release_date", "type": "temporal", "timeUnit": "year", "title": "Year"},
+          {"aggregate": "count", "type": "quantitative", "title": "Total Printed"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "date": "2021-01-01",
+            "text": "Trainer cards expand heavily in the VMAX era"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "fontWeight": "bold",
+        "fontSize": 12,
+        "color": "#333"
+      },
+      "encoding": {
+        "x": {"field": "date", "type": "temporal"},
+        "y": {"value": 300},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    }
+  ]
+}

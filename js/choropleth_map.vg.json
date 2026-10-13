@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 450,
+  "title": "National Pokémon TCG Attendance Density",
+  "projection": {
+    "type": "equirectangular",
+    "rotate": [-140, 0, 0]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape", "fill": "#e0e0e0", "stroke": "white", "strokeWidth": 0.5}
+    },
+    {
+      "data": {
+        "url": "Source 2/pokemon_championships.csv"
+      },
+      "transform": [
+        {
+          "aggregate": [{"op": "sum", "field": "attendance", "as": "Total_Attendance"}],
+          "groupby": ["country"]
+        },
+        {
+          "lookup": "country",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+              "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+            },
+            "key": "properties.NAME",
+            "fields": ["type", "geometry"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.5},
+      "encoding": {
+        "shape": {"field": "geometry", "type": "geojson"},
+        "color": {
+          "field": "Total_Attendance",
+          "type": "quantitative",
+          "scale": {"type": "log", "scheme": "reds"},
+          "title": "Total Attendance"
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {"field": "Total_Attendance", "type": "quantitative", "format": ",", "title": "Total Players Hosted"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -25.2744, 
+            "lon": 133.7751, 
+            "text_lat": -45, 
+            "text_lon": 110, 
+            "text": "High national participation in Australia"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule", 
+            "color": "#7f7f7f", 
+            "strokeDash": [3, 3],
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "longitude": {"field": "lon", "type": "quantitative"},
+            "latitude": {"field": "lat", "type": "quantitative"},
+            "longitude2": {"field": "text_lon"},
+            "latitude2": {"field": "text_lat"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "dy": -5,
+            "fontWeight": "bold",
+            "fontSize": 12,
+            "color": "#e3350d"
+          },
+          "encoding": {
+            "longitude": {"field": "text_lon", "type": "quantitative"},
+            "latitude": {"field": "text_lat", "type": "quantitative"},
+            "text": {"field": "text", "type": "nominal"}
+          }
+        }
+      ]
+    }
+  ]
+}

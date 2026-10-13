@@ -30,6 +30,104 @@
         <div id="proportional_map"></div>
       </div>
       
+      <!-- Choropleth Map Section -->
+      <div class="map-container">
+        <div class="text-context">
+          <h2>National Participation Density</h2>
+          <p>By mapping total historical attendance, we can see how the competitive scene's center of gravity is distributed at a national level.</p>
+        </div>
+        <div id="choropleth_map"></div>
+      </div>
+      
+      <!-- Flow Map Section -->
+      <div class="map-container">
+        <div class="text-context">
+          <h2>Cultural Export: From Tokyo to the World</h2>
+          <p>Tracing the expansion of major international and global championship events from the game's birthplace in Japan to modern cultural hubs.</p>
+        </div>
+        <div id="flow_map"></div>
+      </div>
+
+      <!-- Analytical Charts Section -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Evolution of the Game: Power Creep</h2>
+        <p>While the physical locations of tournaments expanded globally, the cards themselves underwent a drastic historical shift. Over 25 years, the maximum Hit Points (HP) of Pokémon cards skyrocketed—a phenomenon known as "power creep." This forced players to constantly upgrade their collections to remain competitive.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="scatter_plot"></div>
+      </div>
+
+      <!-- Analytical Chart Section -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Elemental Balance</h2>
+        <p>Beyond power inflation, the game's core mechanics rely on elemental types. By analyzing the proportion of types printed each year, we can see how the designers balanced the game—and identify eras where certain elements heavily dominated the competitive meta.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="type_area_chart"></div>
+      </div>
+      
+      <!-- Analytical Chart 3: Dumbbell Plot -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Expanding Power Gap</h2>
+        <p>By comparing historical expansion series, we can track the structural boundaries of the game. While the minimum Hit Points (HP) of basic Pokémon have remained relatively stable since the Wizards of the Coast era, the maximum HP ceiling has violently stretched. This growing chasm forces modern players to adopt highly polarized deck strategies.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="dumbbell_plot"></div>
+      </div>
+      
+      <!-- Analytical Chart 4: Type Heatmap -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Elemental Meta: Printing Bias</h2>
+        <p>By mapping elemental types across historical series, we can visualize the structural design of the game's expansions. This heatmap reveals distinct printing biases, showing how certain eras heavily favored specific elements to artificially shift the competitive meta.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="type_heatmap"></div>
+      </div>
+
+      <!-- Analytical Chart 5: Ridgeline Density Plot -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Shape of Power: HP Distribution</h2>
+        <p>Looking at the absolute maximum HP only tells part of the story. By analyzing the statistical density of Hit Points across three distinct eras—Base (1999), Black & White (2011), and Sword & Shield (2020)—we can see how the entire median curve of the game has shifted rightward, forcing the "average" Pokémon to bulk up just to survive.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="hp_ridgeline"></div>
+      </div>
+
+      <!-- Analytical Chart 6: Meta Bump Chart -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Shifting Meta: Top Elements by Era</h2>
+        <p>Raw printing volume only tells part of the story; competitive balance is driven by ranking. This bump chart tracks the top six most popular Pokémon types across every major series. Notice how Water and Grass consistently fight for the #1 spot, while elements like Psychic and Darkness fluctuate wildly depending on the era's specific mechanical themes.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="meta_bump_chart"></div>
+      </div>
+
+      <!-- Analytical Chart 7: Box Plot -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Cost of Competitiveness: HP by Rarity</h2>
+        <p>Power creep is not distributed equally. By analyzing the statistical spread of Hit Points across distinct rarity tiers, it becomes clear that modern competitive viability is paywalled. The median HP of 'Ultra Rare' and 'Secret Rare' cards vastly outscales standard Common and Uncommon cards, leaving lower-tier cards statistically unviable in tournament play.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="rarity_boxplot"></div>
+      </div>
+
+      <!-- Analytical Chart 8: Streamgraph -->
+      <div class="text-context" style="margin-top: 60px;">
+        <h2>The Deck Ecosystem: Pokémon vs. Trainers</h2>
+        <p>A competitive deck cannot function on Pokémon alone. By tracking the historical print volume across all three major card supertypes, we can see how the game's designers began printing a massive influx of 'Trainer' cards (items and supporters) in the modern era to balance out the overwhelming power creep of the Pokémon themselves.</p>
+      </div>
+      
+      <div class="map-container">
+        <div id="ecosystem_streamgraph"></div>
+      </div>
+
       <!-- Future charts will go here -->
     </div>
   </div>
@@ -37,6 +135,16 @@
   <script>
     // Embed the Proportional Symbol Map
     vegaEmbed('#proportional_map', 'js/proportional_map.vg.json').catch(console.error);
+    vegaEmbed('#choropleth_map', 'js/choropleth_map.vg.json').catch(console.error);
+    vegaEmbed('#flow_map', 'js/flow_map.vg.json').catch(console.error);
+    vegaEmbed('#scatter_plot', 'js/power_creep.vg.json').catch(console.error);
+    vegaEmbed('#type_area_chart', 'js/type_distribution.vg.json').catch(console.error);
+    vegaEmbed('#dumbbell_plot', 'js/hp_dumbell.vg.json').catch(console.error);
+    vegaEmbed('#type_heatmap', 'js/type_heatmap.vg.json').catch(console.error);
+    vegaEmbed('#hp_ridgeline', 'js/hp_ridgeline.vg.json').catch(console.error);
+    vegaEmbed('#meta_bump_chart', 'js/meta_bump.vg.json').catch(console.error);
+    vegaEmbed('#rarity_boxplot', 'js/rarity_boxplot.vg.json').catch(console.error);
+    vegaEmbed('#ecosystem_streamgraph', 'js/ecosystem.stream.vg.json').catch(console.error);
   </script>
 
 </body>
