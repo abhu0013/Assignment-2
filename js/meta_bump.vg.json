@@ -55,8 +55,8 @@
           "Fighting", "Darkness", "Metal", "Dragon", "Colorless"
         ],
         "range": [
-          "#78C850", "#F08030", "#6890F0", "#F8D030", "#F85888", 
-          "#C03028", "#705848", "#B8B8D0", "#7038F8", "#A8A878"
+          "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2",
+          "#D55E00", "#CC79A7", "#000000"
         ]
       }
     }
@@ -70,7 +70,16 @@
         "opacity": 0.8
       }
     },
-    {"mark": {"type": "circle", "size": 200, "opacity": 1}},
+    {
+      "mark": {"type": "circle", "size": 200, "opacity": 1},
+      "encoding": {
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Expansion Era"},
+          {"field": "Clean_Type", "type": "nominal", "title": "Pokémon Element"},
+          {"field": "rank", "type": "quantitative", "title": "Popularity Rank"}
+        ]
+      }
+    },
     {
       "data": {
         "values": [
@@ -83,10 +92,15 @@
       },
       "mark": {
         "type": "text",
-        "dx": 0,
-        "dy": -20,
+        "fill": "#b30000",
+        "fontStyle": "italic",
         "fontWeight": "bold",
-        "fontSize": 12
+        "stroke": "black",
+        "strokeWidth": 0.7,
+        "align": "left",
+        "dx": -35,
+        "dy": -20,
+        "clip": false
       },
       "encoding": {
         "x": {"field": "series"},
@@ -95,5 +109,23 @@
         "color": {"value": "#F85888"}
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

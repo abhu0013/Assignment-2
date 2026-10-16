@@ -4,8 +4,9 @@
   "height": 450,
   "title": "National Pokémon TCG Attendance Density",
   "projection": {
-    "type": "equirectangular",
-    "rotate": [-140, 0, 0]
+    "type": "equalEarth",
+    "scale": 160,
+    "center": [0, 20]
   },
   "layer": [
     {
@@ -25,6 +26,15 @@
           "groupby": ["country"]
         },
         {
+          "joinaggregate": [
+            {"op": "sum", "field": "Total_Attendance", "as": "Global_Attendance"}
+          ]
+        },
+        {
+          "calculate": "datum.Total_Attendance / datum.Global_Attendance",
+          "as": "Attendance_Share"
+        },
+        {
           "lookup": "country",
           "from": {
             "data": {
@@ -40,14 +50,26 @@
       "encoding": {
         "shape": {"field": "geometry", "type": "geojson"},
         "color": {
-          "field": "Total_Attendance",
-          "type": "quantitative",
-          "scale": {"type": "log", "scheme": "reds"},
-          "title": "Total Attendance"
-        },
+      "field": "Attendance_Share",
+      "type": "quantitative",
+      "title": "Share of Global Attendance",
+      "scale": {
+        "type": "symlog",
+        "scheme": "reds"
+      },
+      "legend": {
+        "title": "Share of Global Attendance",
+        "format": ".1%",
+        "orient": "bottom",
+        "direction": "horizontal",
+        "titleLimit": 200,
+        "gradientLength": 200
+      }
+    },
         "tooltip": [
           {"field": "country", "type": "nominal", "title": "Country"},
-          {"field": "Total_Attendance", "type": "quantitative", "format": ",", "title": "Total Players Hosted"}
+          {"field": "Total_Attendance", "type": "quantitative", "title": "Total Attendance"},
+          {"field": "Attendance_Share", "type": "quantitative", "title": "Global Share", "format": ".1%"}
         ]
       }
     },
@@ -81,12 +103,15 @@
         {
           "mark": {
             "type": "text",
-            "align": "center",
-            "baseline": "bottom",
-            "dy": -5,
+            "fill": "#b30000",
+            "fontStyle": "italic",
             "fontWeight": "bold",
-            "fontSize": 12,
-            "color": "#e3350d"
+            "stroke": "black",
+            "strokeWidth": 0.7,
+            "align": "center",
+            "dx": -5,
+            "dy": 8,
+            "clip": false
           },
           "encoding": {
             "longitude": {"field": "text_lon", "type": "quantitative"},
@@ -96,5 +121,23 @@
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

@@ -36,15 +36,10 @@
         "color": {
           "field": "Clean_Rarity",
           "type": "nominal",
+          "title": "Card Rarity",
           "legend": null,
-          "scale": {
-            "domain": ["Common", "Uncommon", "Standard Rare", "Holo Rare", "Ultra Rare", "Secret Rare"],
-            "range": ["#a6cee3", "#1f78b4", "#b2df8a", "#33a02c", "#e3350d", "#ffcb05"]
-          }
-        },
-        "tooltip": [
-          {"field": "Clean_Rarity", "type": "nominal", "title": "Rarity Tier"}
-        ]
+          "scale": {"scheme": "blues"}
+        }
       }
     },
     {
@@ -77,5 +72,23 @@
         "text": {"field": "text", "type": "nominal"}
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

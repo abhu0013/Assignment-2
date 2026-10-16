@@ -31,7 +31,7 @@
           "type": "temporal",
           "timeUnit": "year",
           "title": "Release Year",
-          "axis": {"domain": false, "tickSize": 0}
+          "axis": {"tickCount": 6, "labelAngle": 0, "grid": false}
         },
         "y": {
           "aggregate": "count",
@@ -43,10 +43,18 @@
         "color": {
           "field": "Clean_Type",
           "type": "nominal",
-          "title": "Pokémon Type",
+          "title": "Pokémon Element",
           "scale": {
-            "domain": ["Grass", "Fire", "Water", "Lightning", "Psychic", "Fighting", "Darkness", "Metal", "Fairy", "Dragon", "Colorless"],
-            "range": ["#78C850", "#F08030", "#6890F0", "#F8D030", "#F85888", "#C03028", "#705848", "#B8B8D0", "#EE99AC", "#7038F8", "#A8A878"]
+            "range": [
+              "#E69F00",
+              "#56B4E9",
+              "#009E73",
+              "#F0E442",
+              "#0072B2",
+              "#D55E00",
+              "#CC79A7",
+              "#000000"
+            ]
           }
         },
         "opacity": {
@@ -54,9 +62,9 @@
           "value": 0.1
         },
         "tooltip": [
-          {"field": "Clean_Type", "type": "nominal", "title": "Type"},
+          {"field": "Clean_Type", "type": "nominal", "title": "Pokémon Element"},
           {"field": "release_date", "type": "temporal", "timeUnit": "year", "title": "Year"},
-          {"aggregate": "count", "type": "quantitative", "title": "Total Cards Printed"}
+          {"aggregate": "count", "type": "quantitative", "title": "Total Distinct Cards Printed"}
         ]
       }
     },
@@ -84,5 +92,23 @@
         "text": {"field": "text", "type": "nominal"}
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

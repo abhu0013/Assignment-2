@@ -51,7 +51,7 @@
           "type": "quantitative"
         },
         "tooltip": [
-          {"field": "series", "type": "nominal", "title": "Series"},
+          {"field": "series", "type": "nominal", "title": "Card Expansion Series"},
           {"aggregate": "min", "field": "numeric_hp", "type": "quantitative", "title": "Minimum HP Floor"}
         ]
       }
@@ -65,7 +65,7 @@
           "type": "quantitative"
         },
         "tooltip": [
-          {"field": "series", "type": "nominal", "title": "Series"},
+          {"field": "series", "type": "nominal", "title": "Card Expansion Series"},
           {"aggregate": "max", "field": "numeric_hp", "type": "quantitative", "title": "Maximum HP Ceiling"}
         ]
       }
@@ -82,12 +82,15 @@
       },
       "mark": {
         "type": "text",
-        "align": "right",
-        "dx": -12,
-        "dy": -5,
+        "fill": "#b30000",
+        "fontStyle": "italic",
         "fontWeight": "bold",
-        "fontSize": 11,
-        "color": "#e3350d"
+        "stroke": "black",
+        "strokeWidth": 0.7,
+        "align": "left",
+        "dx": -170,
+        "dy": -15,
+        "clip": false
       },
       "encoding": {
         "y": {"field": "series", "type": "nominal"},
@@ -95,5 +98,23 @@
         "text": {"field": "text", "type": "nominal"}
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }
