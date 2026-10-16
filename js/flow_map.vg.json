@@ -110,12 +110,15 @@
         {
           "mark": {
             "type": "text",
-            "align": "right",
-            "baseline": "bottom",
-            "dy": -5,
+            "fill": "#b30000",
+            "fontStyle": "italic",
             "fontWeight": "bold",
-            "fontSize": 12,
-            "color": "#333"
+            "stroke": "black",
+            "strokeWidth": 0.7,
+            "align": "right",
+            "dx": -5,
+            "dy": 0,
+            "clip": false
           },
           "encoding": {
             "longitude": {"field": "text_lon", "type": "quantitative"},
@@ -125,5 +128,23 @@
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

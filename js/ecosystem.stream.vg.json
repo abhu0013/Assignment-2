@@ -18,14 +18,17 @@
           "type": "temporal",
           "timeUnit": "year",
           "title": "Release Year",
-          "axis": {"grid": false}
+          "axis": {"tickCount": 6, "labelAngle": 0, "grid": false}
         },
         "y": {
           "aggregate": "count",
           "type": "quantitative",
           "stack": "center",
           "title": "Volume of Cards Printed",
-          "axis": null
+          "axis": {
+            "grid": false,
+            "domain": false
+          }
         },
         "color": {
           "field": "supertype",
@@ -37,7 +40,7 @@
           }
         },
         "tooltip": [
-          {"field": "supertype", "type": "nominal", "title": "Type"},
+          {"field": "supertype", "type": "nominal", "title": "Card Category (Supertype)"},
           {"field": "release_date", "type": "temporal", "timeUnit": "year", "title": "Year"},
           {"aggregate": "count", "type": "quantitative", "title": "Total Printed"}
         ]
@@ -65,5 +68,23 @@
         "text": {"field": "text", "type": "nominal"}
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

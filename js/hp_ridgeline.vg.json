@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
-  "height": 120,
+  "height": 450,
   "title": {
     "text": "HP Density Shift: Base (1999) vs Black & White (2011) vs Sword & Shield (2020)",
     "subtitle": ["Notice the massive 'fat tail' stretching past 300 HP in the modern Sword & Shield era,", "proving the game's average baseline has entirely shifted to the right."],
@@ -22,43 +22,52 @@
       "groupby": ["series"],
       "extent": [10, 400],
       "steps": 200
-    }
+    },
+    {"filter": "datum.density > 0.001"}
   ],
-  "mark": {"type": "area", "opacity": 0.6, "interpolate": "monotone"},
-  "encoding": {
-    "x": {
-      "field": "value",
-      "type": "quantitative",
-      "title": "Hit Points (HP)",
-      "axis": {"grid": false}
-    },
-    "y": {
-      "field": "density",
-      "type": "quantitative",
-      "title": "Density of Cards",
-      "axis": null
-    },
-    "color": {
-      "field": "series",
-      "type": "nominal",
-      "title": "Era",
-      "scale": {
-        "domain": ["Base", "Black & White", "Sword & Shield"],
-        "range": ["#f0d900", "#5c5c5c", "#e3350d"]
+  "layer": [
+    {
+      "mark": "area",
+      "encoding": {
+        "x": {"field": "value", "type": "quantitative", "title": "Hit Points (HP)"},
+        "y": {"field": "density", "type": "quantitative", "axis": null},
+        "color": {"field": "series", "type": "nominal"}
       }
     },
-    "row": {
-      "field": "series",
-      "type": "nominal",
-      "title": null,
-      "header": {"labelAngle": 0, "labelAlign": "left", "labelFontSize": 12, "labelFontWeight": "bold"}
-    },
-    "tooltip": [
-      {"field": "series", "type": "nominal", "title": "Era"},
-      {"field": "value", "type": "quantitative", "title": "HP Range (Approx)"}
-    ]
-  },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 25,
+        "opacity": 0
+      },
+      "encoding": {
+        "x": {"field": "value", "type": "quantitative"},
+        "y": {"field": "density", "type": "quantitative"},
+        "color": {"field": "series", "type": "nominal"},
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Era"},
+          {"field": "value", "type": "quantitative", "title": "HP Range (Approx)"}
+        ]
+      }
+    }
+  ],
   "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    },
     "view": {"stroke": "transparent"},
     "concat": {"spacing": -10}
   }

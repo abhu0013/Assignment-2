@@ -4,8 +4,9 @@
   "height": 450,
   "title": "Historical Attendance at Major Pokémon TCG Events",
   "projection": {
-    "type": "equirectangular",
-    "rotate": [-140, 0, 0]
+    "type": "equalEarth",
+    "scale": 160,
+    "center": [0, 20]
   },
   "layer": [
     {
@@ -19,14 +20,14 @@
       "data": {
         "url": "Source 2/pokemon_championships.csv"
       },
-      "mark": {"type": "circle", "opacity": 0.8, "stroke": "white", "strokeWidth": 1},
+      "mark": {"type": "circle", "opacity": 0.6, "stroke": "white", "strokeWidth": 1},
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
         "latitude": {"field": "latitude", "type": "quantitative"},
         "size": {
           "field": "attendance",
           "type": "quantitative",
-          "scale": {"range": [20, 1000]},
+          "scale": {"range": [10, 1000]},
           "title": "Total Attendance"
         },
         "color": {
@@ -36,7 +37,13 @@
             "domain": ["World Championship", "International", "Regional"],
             "range": ["#e3350d", "#2a75bb", "#ffcb05"]
           },
-          "title": "Tournament Tier"
+          "title": "Tournament Tier",
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "titleLimit": 180,
+            "labelLimit": 150
+          }
         },
         "tooltip": [
           {"field": "tournament_name", "type": "nominal", "title": "Event"},
@@ -75,12 +82,15 @@
         {
           "mark": {
             "type": "text",
-            "align": "center",
-            "baseline": "bottom",
-            "dy": -5,
+            "fill": "#b30000",
+            "fontStyle": "italic",
             "fontWeight": "bold",
-            "fontSize": 12,
-            "color": "#e3350d"
+            "stroke": "black",
+            "strokeWidth": 0.7,
+            "align": "left",
+            "dx": -20,
+            "dy": 5,
+            "clip": false
           },
           "encoding": {
             "longitude": {"field": "text_lon", "type": "quantitative"},
@@ -90,5 +100,23 @@
         }
       ]
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

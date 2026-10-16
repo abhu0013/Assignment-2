@@ -35,7 +35,7 @@
           "field": "release_date",
           "type": "temporal",
           "title": "Year of Release",
-          "axis": {"grid": false}
+          "axis": {"tickCount": 6, "labelAngle": 0, "grid": false}
         },
         "y": {
           "field": "numeric_hp",
@@ -100,12 +100,15 @@
       },
       "mark": {
         "type": "text",
-        "align": "right",
-        "dx": -10,
-        "dy": -10,
+        "fill": "#b30000",
+        "fontStyle": "italic",
         "fontWeight": "bold",
-        "fontSize": 12,
-        "color": "#e3350d"
+        "stroke": "black",
+        "strokeWidth": 0.7,
+        "align": "right",
+        "dx": 30,
+        "dy": -25,
+        "clip": false
       },
       "encoding": {
         "x": {"field": "date", "type": "temporal"},
@@ -113,5 +116,23 @@
         "text": {"field": "text", "type": "nominal"}
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {
+      "fontSize": 14,
+      "anchor": "middle"
+    },
+    "axis": {
+      "labelFontSize": 12,
+      "titleFontSize": 13,
+      "labelLimit": 200
+    },
+    "legend": {
+      "labelFontSize": 12,
+      "titleFontSize": 13
+    },
+    "text": {
+      "fontSize": 12
+    }
+  }
 }

@@ -37,26 +37,26 @@
       </div>
 
       <div class="dashboard-grid">
-        <div class="dashboard-card">
+        <div class="dashboard-card full-width">
           <div class="text-context">
             <h3>Global tournament locations</h3>
-            <p>Major hubs across Australia and Malaysia host thousands of players, driving local tourism and cultural exchange.</p>
+            <p>Competitive play has expanded from localized Japanese clubs into a worldwide circuit spanning over 40 nations. While North America and Europe host the highest frequency of Regional events, key hubs across Australia and Malaysia drive vital cross-border participation within the Asia-Pacific qualifying ecosystem.</p>
           </div>
           <div class="map-container" id="proportional_map" aria-label="Proportional symbol map of tournament locations"></div>
         </div>
 
-        <div class="dashboard-card">
+        <div class="dashboard-card full-width">
           <div class="text-context">
-            <h3>National participation density</h3>
-            <p>Total historical attendance shows how the competitive scene's centre of gravity is distributed nationally.</p>
+            <h3>National Participation Share</h3>
+            <p>To accurately compare national engagement, we must normalize the raw attendance into a relative global share. This choropleth reveals the center of gravity sustaining the physical game: the <strong>United States</strong> and <strong>Australia</strong> command the highest relative percentages of the global circuit, reflecting mature domestic leagues that reliably supply the World Championships.</p>
           </div>
           <div class="map-container" id="choropleth_map" aria-label="Choropleth map of national participation"></div>
         </div>
 
         <div class="dashboard-card full-width">
           <div class="text-context">
-            <h3>Cultural export: from Tokyo to the world</h3>
-            <p>Tracing international and global championship events shows how the game's birthplace connected with modern cultural hubs.</p>
+            <h3>Global Magnet: The Oceania Circuit</h3>
+            <p>Major international championships act as substantial economic and cultural engines. Tracing competitor travel corridors into the Melbourne Oceania International Championships (OCIC) illustrates how Australia serves as a premier destination hub for top-tier international players traveling from Europe, the Americas, and Asia.</p>
           </div>
           <div class="map-container" id="flow_map" aria-label="Flow map showing the international expansion of tournaments"></div>
         </div>
@@ -73,64 +73,64 @@
       <div class="dashboard-grid">
         <div class="dashboard-card full-width">
           <div class="text-context">
-            <h3>Power creep</h3>
-            <p>Over 25 years, the maximum Hit Points (HP) of Pokémon cards have increased dramatically, encouraging players to continually upgrade their collections.</p>
+            <h2>The Historical Rise of Power Creep</h2>
+            <p>Over 25 years, the maximum Hit Points of Pokémon cards have surged from a modest 120 HP ceiling to an unprecedented 340 HP. This mechanical inflation accelerated rapidly after 2014 with the introduction of multi-prize EX, GX, and towering VMAX cards, gradually rendering classic vintage cards completely unviable in modern competitive formats.</p>
           </div>
           <div class="map-container" id="scatter_plot" aria-label="Scatter plot showing the increase in Pokémon card Hit Points"></div>
         </div>
 
         <div class="dashboard-card full-width">
           <div class="text-context">
-            <h3>The elemental balance</h3>
-            <p>Tracking the proportion of types printed each year reveals how designers balanced the game's mechanics and competitive meta.</p>
+            <h2>The Elemental Balance</h2>
+            <p>Across every generation, game designers have preserved a stable structural foundation by printing Water, Grass, and Colorless types in consistently large proportions. However, targeted design shifts still occur and most notably the temporary introduction of Fairy-type cards in 2014, which were phased out by 2020 to streamline the competitive type matrix.</p>
           </div>
           <div class="map-container" id="type_area_chart" aria-label="Area chart showing the distribution of Pokémon types over time"></div>
         </div>
 
         <div class="dashboard-card">
           <div class="text-context">
-            <h3>The expanding power gap</h3>
-            <p>Minimum HP has stayed relatively stable while the maximum HP ceiling has stretched, creating increasingly polarised deck strategies.</p>
+            <h3>The Expanding Power Gap</h3>
+            <p>While the HP floor for basic Pokémon has remained pinned between 30 and 50 HP since the 1999 Base Set, the ceiling has nearly tripled. This widening chasm forces modern deck building to polarize heavily between disposable low-HP setup pieces and massive, high-risk tournament sweepers.</p>
           </div>
           <div class="map-container" id="dumbbell_plot" aria-label="Dumbbell plot comparing minimum and maximum Hit Points"></div>
         </div>
 
         <div class="dashboard-card">
           <div class="text-context">
-            <h3>Elemental meta: printing bias</h3>
-            <p>This heatmap reveals how historical expansions favoured particular elements and shifted the competitive meta.</p>
+            <h3>Elemental Meta: Printing Bias</h3>
+            <p>Mapping type frequency across expansions reveals deliberate printing biases designed to refresh tournament play. Modern series like <em>Sword &amp; Shield</em> heavily accelerated Psychic and Darkness printing volumes, while late-arriving additions like Dragon-type cards show how newly introduced mechanics are selectively introduced to disrupt established strategies.</p>
           </div>
           <div class="map-container" id="type_heatmap" aria-label="Heatmap of Pokémon type printing by series"></div>
         </div>
 
         <div class="dashboard-card">
           <div class="text-context">
-            <h3>The shape of power</h3>
-            <p>Comparing Base, Black &amp; White, and Sword &amp; Shield shows how the typical HP distribution shifted to the right over time.</p>
+            <h3>The Shape of Power Distribution</h3>
+            <p>Analyzing density distributions demonstrates that power creep is systemic rather than confined to a few standout cards. Between the Base era and <em>Sword &amp; Shield</em>, the entire median curve migrated rightward, shifting the standard "bulky" threshold from <strong>80 HP</strong> up toward <strong>140 HP</strong> and beyond.</p>
           </div>
           <div class="map-container" id="hp_ridgeline" aria-label="Ridgeline plot showing Hit Point distributions across eras"></div>
         </div>
 
         <div class="dashboard-card">
           <div class="text-context">
-            <h3>The shifting meta</h3>
-            <p>This bump chart tracks the six most popular Pokémon types across major series, highlighting changes in competitive priorities.</p>
+            <h3>The Shifting Meta: Ranking Top Elements</h3>
+            <p>Tracking the relative ranking of card types across eras illustrates how the primary themes of each expansion dictate competitive viability. While Water and Grass consistently battle for the top two spots due to their deep evolutionary rosters, elements like Psychic and Fighting fluctuate dramatically depending on the specific battle mechanics featured in that series.</p>
           </div>
           <div class="map-container" id="meta_bump_chart" aria-label="Bump chart showing the ranking of Pokémon types by era"></div>
         </div>
 
         <div class="dashboard-card full-width">
           <div class="text-context">
-            <h3>The cost of competitiveness</h3>
-            <p>HP varies across rarity tiers, helping explain why modern competitive viability can favour higher-rarity cards.</p>
+            <h2>The Cost of Competitiveness: HP by Rarity</h2>
+            <p>Statistical dispersion across rarity tiers confirms that high survivability is systematically gated behind premium cards. <strong>Ultra Rare</strong> and <strong>Secret Rare</strong> tiers maintain median HP values nearly double those of common cards, compelling competitive players to invest in high-rarity staples simply to stay viable at sanctioned tournaments.</p>
           </div>
           <div class="map-container" id="rarity_boxplot" aria-label="Box plot comparing Hit Points across card rarities"></div>
         </div>
 
         <div class="dashboard-card full-width">
           <div class="text-context">
-            <h3>The deck ecosystem: Pokémon versus Trainers</h3>
-            <p>Tracking the print volume of the three major card supertypes shows the growing role of Trainer cards in balancing the power of Pokémon.</p>
+            <h2>The Deck Ecosystem: Pokémon, Trainers, and Energy</h2>
+            <p>A functional competitive deck requires delicate harmony across supertypes. As Pokémon HP expanded dramatically from 2017 onward, publishers sharply increased the printing of <strong>Trainer cards (items and supporters)</strong> to provide the fast card-draw and rapid energy acceleration required to power up modern heavy-hitting attacks.</p>
           </div>
           <div class="map-container" id="ecosystem_streamgraph" aria-label="Streamgraph showing the card ecosystem over time"></div>
         </div>
@@ -138,33 +138,34 @@
     </section>
 
     <footer class="academic-footer">
-      <p class="footer-title">FIT3179 · Pokémon TCG Cultural Economy</p>
+      <p class="footer-title">FIT3179 · Pokémon Trading Cards</p> 
       <div class="footer-details">
-        <span><strong>Name:</strong> Ahmed Naeem Bhuri</span>
+        <span><strong>Student Name:</strong> Ahmed Naeem Bhuri</span>
         <span><strong>Student ID:</strong> 35446420</span>
-        <span><strong>Date:</strong> 14 October 2026</span>
+        <span><strong>Date:</strong> 20th October 2026</span>
       </div>
       <p class="data-sources">
         <strong>Data sources:</strong>
-        <a href="https://www.kaggle.com/datasets/adampq/pokemon-tcg-all-cards-1999-2023/data" target="_blank" rel="noopener noreferrer">Kaggle card dataset</a>
+        <a href="https://www.kaggle.com/datasets/adampq/pokemon-tcg-all-cards-1999-2023/data" target="_blank" rel="noopener noreferrer">Kaggle Card Dataset</a>
         <span aria-hidden="true">·</span>
-        <a href="https://limitlesstcg.com/tournaments?time=all&amp;type=worlds&amp;format=all&amp;region=all&amp;show=100" target="_blank" rel="noopener noreferrer">Limitless TCG tournament data</a>
+        <a href="https://limitlesstcg.com/tournaments?time=all&amp;type=worlds&amp;format=all&amp;region=all&amp;show=100" target="_blank" rel="noopener noreferrer">Limitless TCG Tournament Data</a>
       </p>
+      <p class="ai-declaration"><strong>Declaration:</strong> Generative AI (Gemini) was used to proofread narrative text and assist with Vega-Lite syntax formatting in accordance with university guidelines.</p>
     </footer>
   </main>
 
   <script>
-    vegaEmbed('#proportional_map', 'js/proportional_map.vg.json').catch(console.error);
-    vegaEmbed('#choropleth_map', 'js/choropleth_map.vg.json').catch(console.error);
-    vegaEmbed('#flow_map', 'js/flow_map.vg.json').catch(console.error);
-    vegaEmbed('#scatter_plot', 'js/power_creep.vg.json').catch(console.error);
-    vegaEmbed('#type_area_chart', 'js/type_distribution.vg.json').catch(console.error);
-    vegaEmbed('#dumbbell_plot', 'js/hp_dumbell.vg.json').catch(console.error);
-    vegaEmbed('#type_heatmap', 'js/type_heatmap.vg.json').catch(console.error);
-    vegaEmbed('#hp_ridgeline', 'js/hp_ridgeline.vg.json').catch(console.error);
-    vegaEmbed('#meta_bump_chart', 'js/meta_bump.vg.json').catch(console.error);
-    vegaEmbed('#rarity_boxplot', 'js/rarity_boxplot.vg.json').catch(console.error);
-    vegaEmbed('#ecosystem_streamgraph', 'js/ecosystem.stream.vg.json').catch(console.error);
+    vegaEmbed('#proportional_map', 'js/proportional_map.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#choropleth_map', 'js/choropleth_map.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#flow_map', 'js/flow_map.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#scatter_plot', 'js/power_creep.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#type_area_chart', 'js/type_distribution.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#dumbbell_plot', 'js/hp_dumbell.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#type_heatmap', 'js/type_heatmap.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#hp_ridgeline', 'js/hp_ridgeline.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#meta_bump_chart', 'js/meta_bump.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#rarity_boxplot', 'js/rarity_boxplot.vg.json', {renderer: 'svg'}).catch(console.error);
+    vegaEmbed('#ecosystem_streamgraph', 'js/ecosystem.stream.vg.json', {renderer: 'svg'}).catch(console.error);
   </script>
 </body>
 </html>
