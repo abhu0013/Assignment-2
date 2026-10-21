@@ -210,6 +210,13 @@ a {
   text-underline-offset: 3px;
 }
 
+.data-sources a::after {
+  content: " ↗";
+  font-size: 0.8em;
+  font-weight: 800;
+  vertical-align: 0.08em;
+}
+
 a:hover,
 a:focus-visible {
   color: var(--navy);
