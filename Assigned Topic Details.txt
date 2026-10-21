@@ -1,8 +1,0 @@
-Topic Name: Pokemon Trading Cards
-Topic Description:Explore pokemon cards by comparing generations, card rarities, Pokemon types or expansion sets. Investigate how card collections have grown over time and identify interesting patterns across different releases. Public datasets provide many variables for meaningul analysis
-
-
-Volume 12: Arts, Culture & History (Australian Focus
-Most topics below have Australian datasets available through the National Library of Australia, National Museumn of Australia, Australian Bureau of Statistics (ABS) Australian Institute of Aboriginal and Torres Strait Islander Studies (AIATSIS), Screen Australia, Trove, Creative Australia and data.gov.au
-Your project should answer interesting questions, identify patterns or trends, and communicate a clear story using data.
-Note: Focus on investigating cultural participation, historical change, heritage preservation or artistic development rather than simply listing events, artists or historical facts. The strongest projects combine multiple related variables to answer a clear research question and communicate meaningful insights
